@@ -36,7 +36,7 @@
 			<MD5>b7ca547a6ac9402531c5a6e2939ce0f8</MD5>
 		</Module>
 		<Module name="denLib 3.0.13" id="DenLib" depends="">
-			<URL>https://www.dropbox.com/sh/qqgsswnyxh2mq9f/POfsutNZ20/denLib/denLib-1.5.2-3.0.13.jar</URL>
+			<URL>https://dl.dropboxusercontent.com/sh/qqgsswnyxh2mq9f/POfsutNZ20/denLib/denLib-1.5.2-3.0.13.jar?token_hash=AAGVEWNeMyUs6qCivHtWjSL4s_x15ftKx7yqBEJco8nPAQ&amp;dl=1</URL>
 			<Required>true</Required>
 			<IsDefault>true</IsDefault>
 			<InJar>false</InJar>
