@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServerPack version="2.6" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='https://raw.github.com/smbarbour/MCUpdater/master/MCU-API/ServerPack.xsd'>
+	<Server id="webhippie" name="Webhippie Server" newsUrl="http://webhippie.de/news" iconUrl="http://webhippie.de/images/minecraft.png" version="1.5.2" serverAddress="server.webhippie.de" revision="0.0.1" generateList="true">
+		<Module name="Code Chicken Core 0.8.6.10" id="CodeChickenCore" depends="">
+			<URL>http://adf.ly/KpW92</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>true</CoreMod>
+			<MD5>69c1768606869cff68f0de8928a5e2a9</MD5>
+		</Module>
+		<Module name="CoFH Core 1.5.2.2" id="CofhCore" depends="">
+			<URL>http://adf.ly/PSWmj</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>true</CoreMod>
+			<MD5>b7ca547a6ac9402531c5a6e2939ce0f8</MD5>
+		</Module>
+		<Module name="denLib 3.0.13" id="DenLib" depends="">
+			<URL>https://www.dropbox.com/sh/qqgsswnyxh2mq9f/POfsutNZ20/denLib/denLib-1.5.2-3.0.13.jar</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>true</CoreMod>
+			<MD5>d41d8cd98f00b204e9800998ecf8427e</MD5>
+		</Module>
+		<Module name="Immibis Microblocks 55.0.1" id="ImmibisMicroblocks" depends="ImmibisCore">
+			<URL>http://dl.dropboxusercontent.com/u/2944265/mods/autobuilt/files/immibis-microblocks-55.0.1.jar</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>true</CoreMod>
+			<MD5>e6bebe4b5b85cc9bd403a742c84f7de1</MD5>
+		</Module>
+		<Module name="Not Enough Items 1.5.2.18" id="NotEnoughItems" depends="CodeChickenCore">
+			<URL>http://adf.ly/KpW91</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>true</CoreMod>
+			<MD5>ff89be2afab53be741824e20cb836bd0</MD5>
+		</Module>
+		<Module name="Advanced Power Management 1.2.68" id="AdvancedPowerManagement" depends="Industrialcraft">
+			<URL>http://forum.industrial-craft.net/index.php?page=Attachment&amp;attachmentID=2953</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>8c584b45c50db4d70337eb28f290323b</MD5>
+		</Module>
+		<Module name="Advanced Solar Panel 3.3.7" id="AdvancedSolarPanel" depends="Industrialcraft">
+			<URL>http://forum.industrial-craft.net/index.php?page=Attachment&amp;attachmentID=2944&amp;h=924240b9a86b97d2bb27a60478065578bdeb8337</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>9ebcce84958839d34eeaa28518fd65aa</MD5>
+		</Module>
+		<Module name="Applied Energistics rv10.n" id="AppliedEnergistics" depends="">
+			<URL>http://goo.gl/RV6CK</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>d41d8cd98f00b204e9800998ecf8427e</MD5>
+		</Module>
+		<Module name="Bibliocraft 1.3.1" id="Bibliocraft" depends="">
+			<URL>http://adf.ly/Q1Vgm</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>d41d8cd98f00b204e9800998ecf8427e</MD5>
+		</Module>
+		<Module name="Buildcraft 3.6.0" id="Buildcraft" depends="">
+			<URL>http://bit.ly/11eZtZ3</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>58b42a6500d892473bd5272408803005</MD5>
+		</Module>
+		<Module name="Charge Pads 2.7.0.86" id="ChargePads" depends="Industrialcraft">
+			<URL>http://forum.industrial-craft.net/index.php?page=Attachment&amp;attachmentID=2954&amp;h=d53038af83bed03af8f28a149dad670121ca8837</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>8bc62c444674c59598e29702dd6e8622</MD5>
+		</Module>
+		<Module name="Charge Pads 2.7.0.86" id="ChargePads" depends="Industrialcraft">
+			<URL>http://forum.industrial-craft.net/index.php?page=Attachment&amp;attachmentID=2954&amp;h=d53038af83bed03af8f28a149dad670121ca8837</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>8bc62c444674c59598e29702dd6e8622</MD5>
+		</Module>
+		<Module name="Computercraft 1.53" id="Computercraft" depends="">
+			<URL>http://www.mediafire.com/download/skwmkw7ybr18rua/ComputerCraft1.53.zip</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>be7b77384b966e66e264de6868cd25f9</MD5>
+		</Module>
+		<Module name="Dimensional Anchors 55.0.1" id="DimensionalAnchors" depends="ImmibisCore">
+			<URL>http://dl.dropboxusercontent.com/u/2944265/mods/autobuilt/files/dimensional-anchor-55.0.1.jar</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>d41e0c3b7be9e9f40c09a64b14cf8c5c</MD5>
+		</Module>
+		<Module name="Immibis Core 55.1.3" id="ImmibisCore" depends="">
+			<URL>http://dl.dropboxusercontent.com/u/2944265/mods/autobuilt/files/immibis-core-55.1.3.jar</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>fb2cb84d9fcf85f7ff64f5ea0617dccd</MD5>
+		</Module>
+		<Module name="Infinitubes 55.0.5" id="Infinitubes" depends="ImmibisCore">
+			<URL>http://dl.dropboxusercontent.com/u/2944265/mods/autobuilt/files/infinitubes-55.0.5.jar</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>912b67ea8e01a662cf3be64e93d02840</MD5>
+		</Module>
+		<Module name="Liquid XP 55.1.1" id="LiquidXp" depends="ImmibisCore">
+			<URL>http://dl.dropboxusercontent.com/u/2944265/mods/autobuilt/files/liquid-xp-55.1.1.jar</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>b77ee34d30272bf237f50fdf6715414b</MD5>
+		</Module>
+		<Module name="Tube Stuff 55.0.2" id="TubeStuff" depends="ImmibisCore">
+			<URL>http://dl.dropboxusercontent.com/u/2944265/mods/autobuilt/files/tubestuff-55.0.2.jar</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>0ec2041467e19bead664987db7f9bcb9</MD5>
+		</Module>
+	</Server>
+</ServerPack>
