@@ -202,27 +202,3 @@
 		</Module>
 	</Server>
 </ServerPack>
-.0.5" id="Infinitubes" depends="ImmibisCore">
-			<URL>http://dl.dropboxusercontent.com/u/2944265/mods/autobuilt/files/infinitubes-55.0.5.jar</URL>
-			<Required>true</Required>
-			<IsDefault>true</IsDefault>
-			<InJar>false</InJar>
-			<KeepMeta>false</KeepMeta>
-			<Extract>false</Extract>
-			<InRoot>false</InRoot>
-			<CoreMod>false</CoreMod>
-			<MD5>912b67ea8e01a662cf3be64e93d02840</MD5>
-		</Module>
-		<Module name="Liquid XP 55.1.1" id="LiquidXp" depends="ImmibisCore">
-			<URL>http://dl.dropboxusercontent.com/u/2944265/mods/autobuilt/files/liquid-xp-55.1.1.jar</URL>
-			<Required>true</Required>
-			<IsDefault>true</IsDefault>
-			<InJar>false</InJar>
-			<KeepMeta>false</KeepMeta>
-			<Extract>false</Extract>
-			<InRoot>false</InRoot>
-			<CoreMod>false</CoreMod>
-			<MD5>b77ee34d30272bf237f50fdf6715414b</MD5>
-		</Module>
-	</Server>
-</ServerPack>
