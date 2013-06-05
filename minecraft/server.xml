@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="server.xsl" type="text/xsl" ?>
 <ServerPack version="2.6" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='https://raw.github.com/smbarbour/MCUpdater/master/MCU-API/ServerPack.xsd'>
 	<Server id="webhippie" name="Webhippie Server" newsUrl="http://webhippie.de/minecraft/" iconUrl="" version="1.5.2" serverAddress="server.webhippie.de:25566" revision="0.0.1" generateList="true">
 		<Module name="Minecraft Forge 7.8.0.723" id="MinecraftForge" depends="">
