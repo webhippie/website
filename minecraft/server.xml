@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="server.xsl" type="text/xsl" ?>
 <ServerPack version="2.6" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='https://raw.github.com/smbarbour/MCUpdater/master/MCU-API/ServerPack.xsd'>
 	<Server id="webhippie" name="Webhippie Server" newsUrl="http://webhippie.de/minecraft/" iconUrl="" version="1.5.2" serverAddress="server.webhippie.de:25566" revision="0.0.1" generateList="true">
 		<Module name="Minecraft Forge 7.8.0.723" id="MinecraftForge" depends="">
@@ -92,7 +91,7 @@
 			<MD5>9ebcce84958839d34eeaa28518fd65aa</MD5>
 		</Module>
 		<Module name="Applied Energistics rv10.n" id="AppliedEnergistics" depends="">
-			<URL>http://goo.gl/RV6CK</URL>
+			<URL>http://ae-mod.info/releases/appeng-rv10-n.zip</URL>
 			<Required>true</Required>
 			<IsDefault>true</IsDefault>
 			<InJar>false</InJar>
@@ -103,7 +102,7 @@
 			<MD5>d41d8cd98f00b204e9800998ecf8427e</MD5>
 		</Module>
 		<Module name="Bibliocraft 1.3.1" id="Bibliocraft" depends="">
-			<URL>http://adf.ly/Q1Vgm</URL>
+			<URL>http://adfoc.us/12433424138064</URL>
 			<Required>true</Required>
 			<IsDefault>true</IsDefault>
 			<InJar>false</InJar>
