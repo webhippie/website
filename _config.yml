@@ -4,6 +4,8 @@ description: Software Entwicklung und Consulting
 author: Webhippie Team
 author_email: mail@webhippie.de
 
+url: http://webhippie.de/
+
 paginate: 5
 pygments: true
 markdown: rdiscount
