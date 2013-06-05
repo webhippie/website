@@ -68,6 +68,17 @@
 			<CoreMod>true</CoreMod>
 			<MD5>ff89be2afab53be741824e20cb836bd0</MD5>
 		</Module>
+		<Module name="Industrialcraft 1.115.341" id="Industrialcraft" depends="">
+			<URL>http://www.google.com/url?q=http://ic2api.player.to:8080/job/IC2_lf/lastSuccessfulBuild/artifact/packages/industrialcraft-2_1.115.341-lf.jar&amp;sa=D</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>d41d8cd98f00b204e9800998ecf8427e</MD5>
+		</Module>
 		<Module name="Advanced Power Management 1.2.68" id="AdvancedPowerManagement" depends="Industrialcraft">
 			<URL>http://forum.industrial-craft.net/index.php?page=Attachment&amp;attachmentID=2953</URL>
 			<Required>true</Required>
@@ -178,17 +189,6 @@
 			<CoreMod>false</CoreMod>
 			<MD5>fb2cb84d9fcf85f7ff64f5ea0617dccd</MD5>
 		</Module>
-		<Module name="Industrialcraft 1.115.341" id="Industrialcraft" depends="">
-			<URL>http://www.google.com/url?q=http://ic2api.player.to:8080/job/IC2_lf/lastSuccessfulBuild/artifact/packages/industrialcraft-2_1.115.341-lf.jar&amp;sa=D&amp;usg=ALhdy28GrxsGlXEitSfnO0BHmRuO5xeElA</URL>
-			<Required>true</Required>
-			<IsDefault>true</IsDefault>
-			<InJar>false</InJar>
-			<KeepMeta>false</KeepMeta>
-			<Extract>false</Extract>
-			<InRoot>false</InRoot>
-			<CoreMod>false</CoreMod>
-			<MD5>d41d8cd98f00b204e9800998ecf8427e</MD5>
-		</Module>
 		<Module name="Infinitubes 55.0.5" id="Infinitubes" depends="ImmibisCore">
 			<URL>http://dl.dropboxusercontent.com/u/2944265/mods/autobuilt/files/infinitubes-55.0.5.jar</URL>
 			<Required>true</Required>
@@ -210,6 +210,10 @@
 			<InRoot>false</InRoot>
 			<CoreMod>false</CoreMod>
 			<MD5>b77ee34d30272bf237f50fdf6715414b</MD5>
+		</Module>
+	</Server>
+</ServerPack>
+/MD5>
 		</Module>
 	</Server>
 </ServerPack>
