@@ -69,7 +69,7 @@
 			<MD5>ff89be2afab53be741824e20cb836bd0</MD5>
 		</Module>
 		<Module name="Industrialcraft 1.115.341" id="Industrialcraft" depends="">
-			<URL>http://www.google.com/url?q=http://ic2api.player.to:8080/job/IC2_lf/lastSuccessfulBuild/artifact/packages/industrialcraft-2_1.115.341-lf.jar&amp;sa=D</URL>
+			<URL>http://ic2api.player.to:8080/job/IC2_lf/lastSuccessfulBuild/artifact/packages/industrialcraft-2_1.115.341-lf.jar</URL>
 			<Required>true</Required>
 			<IsDefault>true</IsDefault>
 			<InJar>false</InJar>
@@ -210,10 +210,6 @@
 			<InRoot>false</InRoot>
 			<CoreMod>false</CoreMod>
 			<MD5>b77ee34d30272bf237f50fdf6715414b</MD5>
-		</Module>
-	</Server>
-</ServerPack>
-/MD5>
 		</Module>
 	</Server>
 </ServerPack>
