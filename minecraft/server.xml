@@ -36,7 +36,7 @@
 			<MD5>b7ca547a6ac9402531c5a6e2939ce0f8</MD5>
 		</Module>
 		<Module name="denLib 3.0.13" id="DenLib" depends="">
-			<URL>https://dl.dropboxusercontent.com/sh/qqgsswnyxh2mq9f/POfsutNZ20/denLib/denLib-1.5.2-3.0.13.jar?token_hash=AAGVEWNeMyUs6qCivHtWjSL4s_x15ftKx7yqBEJco8nPAQ&amp;dl=1</URL>
+			<URL>https://www.dropbox.com/sh/qqgsswnyxh2mq9f/POfsutNZ20/denLib/denLib-1.5.2-3.0.13.jar</URL>
 			<Required>true</Required>
 			<IsDefault>true</IsDefault>
 			<InJar>false</InJar>
@@ -102,7 +102,7 @@
 			<MD5>d41d8cd98f00b204e9800998ecf8427e</MD5>
 		</Module>
 		<Module name="Bibliocraft 1.3.1" id="Bibliocraft" depends="">
-			<URL>http://205.196.121.210/ho7ggxu2dxog/ou99xlht0i5amdl/BiblioCraft%5Bv1.3.1%5D.zip</URL>
+			<URL>http://adf.ly/Q1Vgm</URL>
 			<Required>true</Required>
 			<IsDefault>true</IsDefault>
 			<InJar>false</InJar>
@@ -197,6 +197,12 @@
 			<KeepMeta>false</KeepMeta>
 			<Extract>false</Extract>
 			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>b77ee34d30272bf237f50fdf6715414b</MD5>
+		</Module>
+	</Server>
+</ServerPack>
+		<InRoot>false</InRoot>
 			<CoreMod>false</CoreMod>
 			<MD5>b77ee34d30272bf237f50fdf6715414b</MD5>
 		</Module>
