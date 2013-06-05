@@ -202,9 +202,3 @@
 		</Module>
 	</Server>
 </ServerPack>
-		<InRoot>false</InRoot>
-			<CoreMod>false</CoreMod>
-			<MD5>b77ee34d30272bf237f50fdf6715414b</MD5>
-		</Module>
-	</Server>
-</ServerPack>
