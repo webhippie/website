@@ -178,6 +178,17 @@
 			<CoreMod>false</CoreMod>
 			<MD5>fb2cb84d9fcf85f7ff64f5ea0617dccd</MD5>
 		</Module>
+		<Module name="Industrialcraft 1.115.341" id="Industrialcraft" depends="">
+			<URL>http://www.google.com/url?q=http://ic2api.player.to:8080/job/IC2_lf/lastSuccessfulBuild/artifact/packages/industrialcraft-2_1.115.341-lf.jar&amp;sa=D&amp;usg=ALhdy28GrxsGlXEitSfnO0BHmRuO5xeElA</URL>
+			<Required>true</Required>
+			<IsDefault>true</IsDefault>
+			<InJar>false</InJar>
+			<KeepMeta>false</KeepMeta>
+			<Extract>false</Extract>
+			<InRoot>false</InRoot>
+			<CoreMod>false</CoreMod>
+			<MD5>d41d8cd98f00b204e9800998ecf8427e</MD5>
+		</Module>
 		<Module name="Infinitubes 55.0.5" id="Infinitubes" depends="ImmibisCore">
 			<URL>http://dl.dropboxusercontent.com/u/2944265/mods/autobuilt/files/infinitubes-55.0.5.jar</URL>
 			<Required>true</Required>
