@@ -1,0 +1,6 @@
+@mixin inderfont($size,$color: $page_background) 
+{
+	font-family: 'Inder', Arial;
+	font-size: $size;
+	color: $color;
+}

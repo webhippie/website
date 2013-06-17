@@ -1,0 +1,190 @@
+@import url(http://fonts.googleapis.com/css?family=Inder);
+$page_color: rgb(0,0,0);
+$page_background: rgb(255,100,0);
+$link_color: invert($page_color);
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page: Home
+:: ...
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+--------------------------------------------
+:: Fundamentals
+:: Header
+:: Footer
+*/
+
+/* Fundamentals */
+
+img
+{
+	width: 100%;
+}
+
+body
+{
+	background-color: $page_background;
+}
+
+a, a:link, a:active, a:visited
+{
+	color: $link_color;
+}
+
+a:hover
+{
+	color: invert($link_color);
+}
+
+
+#featured h1
+{
+	@include inderfont(35px,$page_color);
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#featured .description
+{
+	@include inderfont(24px,$page_color);
+	line-height: 30px;
+	margin-bottom: 25px;
+}
+
+
+/* Header */
+
+
+.whTopBar
+{
+	background-color: $page_color;
+	height: 175px;
+	#fittextTitle
+	{
+/*		font-size: 60px;*/
+/*		font-family: 'Inder', Arial;*/
+		@include inderfont(60px);
+		a
+		{
+			color: $page_background;
+		}
+	}
+}
+
+.whTitleArea
+{
+	//width: $row-width;
+	margin: 0px auto 0px auto;
+	padding-top: 45px;
+}
+
+.whSubtitle
+{
+	@include inderfont(30px);
+
+	padding: 0px 15px 0px 15px;
+	span 
+	{
+		margin: 0px 15px 0px 15px;
+	}
+}
+
+
+.whBlogButton
+{
+	z-index: 100000;
+	position: absolute;
+	
+	top: 100px;
+	right: 112px;
+
+	@include border-radius(50%);
+	background-color: $page_background;
+	border: 8px solid $page_color;
+	width: 125px;
+	height: 125px;
+	
+	text-align: center;
+	line-height: 109px;
+	vertical-align: middle;
+
+	@include inderfont(25px,$page_color);
+	font-weight: bold;
+
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+
+	&:link, &:visited, &:active
+	{
+		color: $page_color;
+	}
+
+	&:hover
+	{
+		color: $page_color;
+		background-color: lighten($page_color, 30%);
+	}
+}
+
+
+/* Footer */
+
+footer hr
+{
+	border-color: $page_color;
+}
+
+.whCopyRight
+{
+	color: $page_color;
+}
+
+
+/* -----------------------------------------
+   Page: Home
+--------------------------------------------
+:: Members
+:: 
+:: 
+*/
+
+
+/* Members */
+
+
+
+.members .panel
+{
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: $page_color;
+	border: 0;
+
+	h2
+	{
+		@include inderfont(16px);		
+		padding: 0;
+		margin: 0px 0px 8px 0px; 
+	}
+	h3
+	{
+		@include inderfont(12px);
+		margin: 20px 0px 20px 0px;
+	}
+	p
+	{
+		@include inderfont(12px);
+		font-weight: 700;
+	}
+}
+
+.memberBox
+{
+	margin-bottom: 20px;
+}
