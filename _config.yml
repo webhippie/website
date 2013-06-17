@@ -13,5 +13,5 @@ permalink: /:year/:month/:day/:title/
 
 assets:
   compress:
-    js: uglifier
-    css: sass
+    #js: uglifier
+    #css: sass

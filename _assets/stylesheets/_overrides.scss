@@ -104,7 +104,7 @@ a:hover
 	top: 100px;
 	right: 112px;
 
-	@include border-radius(50%);
+	@include prefixer(border-radius, 50%, spec);
 	background-color: $page_background;
 	border: 8px solid $page_color;
 	width: 125px;
