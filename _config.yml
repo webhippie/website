@@ -11,7 +11,7 @@ pygments: true
 markdown: rdiscount
 permalink: /:year/:month/:day/:title/
 
-# defaults
-sass:
-  syntax: scss        # scss|sass
-  style:  compressed  # nested|expanded|compact|compressed
+assets:
+  compress:
+    js: uglifier
+    css: sass

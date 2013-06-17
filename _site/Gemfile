@@ -1,5 +1,0 @@
-source 'http://rubygems.org'
-
-gem "jekyll-sass"
-gem "jekyll-haml"
-gem "zurb-foundation"
