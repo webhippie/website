@@ -10,8 +10,10 @@ paginate: 5
 pygments: true
 markdown: rdiscount
 permalink: /:year/:month/:day/:title/
+safe: false
 
 assets:
   compress:
     #js: uglifier
     #css: sass
+
