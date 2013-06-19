@@ -7,7 +7,7 @@ require "jekyll"
 
 desc "Generate website"
 task :generate do
-  Dir.mkdir("_site") unless File.direcotry? "_site"
+  Dir.mkdir("_site") unless File.directory? "_site"
   
   Jekyll::Site.new(
     Jekyll.configuration({
