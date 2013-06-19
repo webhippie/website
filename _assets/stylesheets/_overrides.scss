@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Inder);
+
 $page_color: rgb(0,0,0);
 $page_background: rgb(255,100,0);
 $link_color: invert($page_color);
@@ -8,6 +9,7 @@ $link_color: invert($page_color);
 -----------------------------------------------------
 :: Shared Styles
 :: Page: Home
+:: Page: Impressum
 :: ...
 */
 
@@ -32,6 +34,11 @@ body
 	background-color: $page_background;
 }
 
+html
+{
+	background-color: $page_background;
+}
+
 a, a:link, a:active, a:visited
 {
 	color: $link_color;
@@ -43,58 +50,59 @@ a:hover
 }
 
 
-#featured h1
+#featured
 {
-	@include inderfont(35px,$page_color);
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-}
-
-#featured .description
-{
-	@include inderfont(24px,$page_color);
-	line-height: 30px;
-	margin-bottom: 25px;
+	h1
+	{
+		@include inderfont(35px,$page_color);
+		margin: 40px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+	}
+	
+	.description
+	{
+		@include inderfont(24px,$page_color);
+		line-height: 30px;
+		margin-bottom: 40px;
+	}
 }
 
 
 /* Header */
 
-
-.whTopBar
+.headerBar
 {
 	background-color: $page_color;
-	height: 175px;
-	#fittextTitle
+	padding: 50px 0px 45px 0px;
+	#titleText
 	{
-/*		font-size: 60px;*/
-/*		font-family: 'Inder', Arial;*/
-		@include inderfont(60px);
+		color: $page_background;
+		@include inderfont(60px);	
+		margin: 0px;
+		line-height: 40px;
 		a
 		{
 			color: $page_background;
+			&:link, &:visited, &:active, &:hover
+			{
+				color: $page_background;
+			}
+		}
+	}
+
+	h3
+	{
+		color: $page_background;
+		@include inderfont(27px);
+		margin: 0px;
+		font-weight: normal;
+
+		span 
+		{
+			margin: 0px 15px 0px 15px;
 		}
 	}
 }
-
-.whTitleArea
-{
-	//width: $row-width;
-	margin: 0px auto 0px auto;
-	padding-top: 45px;
-}
-
-.whSubtitle
-{
-	@include inderfont(30px);
-
-	padding: 0px 15px 0px 15px;
-	span 
-	{
-		margin: 0px 15px 0px 15px;
-	}
-}
-
 
 .whBlogButton
 {
@@ -106,12 +114,12 @@ a:hover
 
 	@include prefixer(border-radius, 50%, spec);
 	background-color: $page_background;
-	border: 8px solid $page_color;
+	border: 10px solid $page_color;
 	width: 125px;
 	height: 125px;
 	
 	text-align: center;
-	line-height: 109px;
+	line-height: 105px;
 	vertical-align: middle;
 
 	@include inderfont(25px,$page_color);
@@ -132,6 +140,23 @@ a:hover
 	}
 }
 
+.whSmallBlogButton
+{
+	background-color: $page_color;
+	padding: 12px 0px 10px 0px;
+	text-align: center;
+	margin-top: 10px;
+
+	a
+	{
+		font-weight: bold;
+		@include inderfont(20px,$link_color);
+	}
+	a:hover
+	{
+		color: $page_background;
+	}
+}
 
 /* Footer */
 
@@ -187,4 +212,18 @@ footer hr
 .memberBox
 {
 	margin-bottom: 20px;
+}
+
+/* -----------------------------------------
+   Page: Impressum
+--------------------------------------------*/
+
+.impressumContainer
+{
+	margin-top: 40px;
+	color: $page_color;
+	h1,h2,h3,h4,h5,h6
+	{
+		color: $page_color;
+	}
 }

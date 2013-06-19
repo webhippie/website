@@ -20,26 +20,35 @@
 //= require foundation/foundation.section
 //= require_self
 
-
-function equalizeHeights()
+function equalizeBoxHeights()
 {
-	Array.max = function( array ) { return Math.max.apply( Math, array ); };
-	var heights = $('.memberBox').map(function() { return $(this).height();} ).get();
-	var highestCol = Array.max(heights);
-	$('.memberBox .panel').height(highestCol-40);
-	/* TODO DEBUG */ document.title = highestCol + "  " + Math.random();
-}	
+	$('#boxHeightContainer').each(function()
+	{  
+		$('.boxHeightColumn',this).css("min-height",0);
+		
+		var highestBox = 0;
+		$('.boxHeightColumn', this).each(function()
+		{
+			if($(this).height() > highestBox) 
+				highestBox = $(this).height(); 
+		});  
+
+		$('.boxHeightColumn',this).css("min-height",highestBox);
+	});    
+}
 
 $(document).foundation();
+
 $(document).ready(function()
 {
-	equalizeHeights();
-	$("#fittextTitle").fitText(1.1, { minFontSize: '25px', maxFontSize: '60px' });
-	//$(".whSubtitle").fitText();	
+	equalizeBoxHeights();
+	$("#titleText").fitText(1.1, { /*minFontSize: '25px',*/ maxFontSize: '60px' });
+	$("#subtitleText").fitText(2.8, { minFontSize: '0px', maxFontSize: '27px' } );	
 	$('.members .memberBox').shuffle();
 });
 
-$(window).resize(function() 
+$(window).resize(function()
 {
-	setTimeout(function(){equalizeHeights();},1000);
+	//setTimeout(function(){equalizeBoxHeights();},250);
+	equalizeBoxHeights();
 });
