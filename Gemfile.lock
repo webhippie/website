@@ -38,6 +38,7 @@ GEM
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     rack (1.5.2)
+    rake (10.0.4)
     safe_yaml (0.7.1)
     sass (3.2.9)
     sprockets (2.10.0)
@@ -61,5 +62,6 @@ PLATFORMS
 DEPENDENCIES
   bourbon
   jekyll-assets
+  rake
   uglifier
   zurb-foundation
