@@ -3,6 +3,8 @@ require "bundler/setup"
 
 Bundler.require
 
+require "jekyll"
+
 desc "Generate website"
 task :generate do
   Jekyll::Site.new(
@@ -16,7 +18,7 @@ end
 desc "Publish website"
 task :publish => [:generate] do
   Dir.mktmpdir do |tmp|
-    cp_r "_site/*", tmp
+    cp_r "_site/.", tmp
     Dir.chdir tmp
     
     message = "Site updated at #{Time.now.utc}"
