@@ -6,13 +6,13 @@ author_email: mail@webhippie.de
 
 url: http://webhippie.de
 
-paginate: 5
-pygments: true
-markdown: rdiscount
-permalink: /:year/:month/:day/:title/
-
 assets:
+  cache_assets: true
   compress:
-    #js: uglifier
-    #css: sass
+    css: sass
+    js:  uglifier
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile

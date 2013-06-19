@@ -1,5 +1,58 @@
-{% include header.html %}
-	 
-{{ content }}
-	 
-{% include footer.html %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+  	<meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width" />
+    
+  	<title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+
+    <meta name="description" content="{{site.description}}" />
+    <meta name="author" content="{{site.author}}" />    
+
+  	{% stylesheet app %}
+  </head>
+  <body>
+  	<div class="headerBar">
+  		<div class="row">
+  			<div class="small-12 large-columns 9">
+  				<h1 id="titleText"><a href="/">{{site.name}}</a></h1>
+  			</div>
+  		</div>
+      
+  		<div class="row">
+  			<div class="small-12 large-9 columns">
+  				<h3 id="subtitleText">FREE&emsp;|&emsp;INDYPENDENT&emsp;|&emsp;INNOVATIV&emsp;|&emsp;SUPERCOOL</h3>
+  			</div>
+  		</div>
+  		<a class="hide-for-small whBlogButton right">BLOG</a>
+  	</div>
+
+  	<div class="whSmallBlogButton show-for-small">
+  		<a href="#">BLOG</a>
+  	</div>
+
+    {{ content }}
+
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr />
+
+        <div class="row">
+          <div class="large-6 columns">
+            <p class="whCopyRight">&copy; <time>2013</time> {{ site.author }}</p>
+          </div>
+          <div class="large-6 columns">
+            <ul class="inline-list right">
+              <li>
+                <a href="impressum.html">Impressum</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    {% javascript app %}
+
+  </body>
+</html>
