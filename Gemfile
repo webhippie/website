@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
-gem "jekyll-assets"
-gem "bourbon"
-gem "zurb-foundation"
+group :development do
+  gem "jekyll-assets"
+  gem "bourbon"
+  gem "zurb-foundation"
+end
