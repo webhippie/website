@@ -1,7 +1,7 @@
 //= require vendor/jquery
 //= require vendor/custom.modernizr
-//= require vendor/shuffleelements.jquery
-//= require vendor/jquery.fittext
+//= require vendor/shuffleelements
+//= require vendor/fittext
 
 //= require foundation/foundation
 //= require foundation/foundation.joyride
@@ -20,35 +20,40 @@
 //= require foundation/foundation.section
 //= require_self
 
-function equalizeBoxHeights()
-{
-	$('#boxHeightContainer').each(function()
-	{  
-		$('.boxHeightColumn',this).css("min-height",0);
+function equalizeBoxHeights() {
+	$('#boxHeightContainer').each(function() {  
+		$('.boxHeightColumn', this).css("min-height", 0);
 		
 		var highestBox = 0;
-		$('.boxHeightColumn', this).each(function()
-		{
-			if($(this).height() > highestBox) 
-				highestBox = $(this).height(); 
+    
+		$('.boxHeightColumn', this).each(function() {
+			if($(this).height() > highestBox) {
+			  highestBox = $(this).height(); 
+			}
 		});  
 
-		$('.boxHeightColumn',this).css("min-height",highestBox);
+		$('.boxHeightColumn', this).css("min-height", highestBox);
 	});    
 }
 
 $(document).foundation();
 
-$(document).ready(function()
-{
+$(document).ready(function() {
 	equalizeBoxHeights();
-	$("#titleText").fitText(1.1, { /*minFontSize: '25px',*/ maxFontSize: '60px' });
-	$("#subtitleText").fitText(2.8, { minFontSize: '0px', maxFontSize: '27px' } );	
-	$('.members .memberBox').shuffle();
+  
+	$("#titleText").fitText(
+    1.1, 
+    { maxFontSize: '60px' }
+  );
+  
+	$("#subtitleText").fitText(
+    2.8, 
+    { minFontSize: '0px', maxFontSize: '27px' } 
+  );	
+	
+  $('.members .memberBox').shuffle();
 });
 
-$(window).resize(function()
-{
-	//setTimeout(function(){equalizeBoxHeights();},250);
+$(window).resize(function() {
 	equalizeBoxHeights();
 });
