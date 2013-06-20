@@ -20,6 +20,7 @@ $link_color: invert($page_color);
 :: Fundamentals
 :: Header
 :: Footer
+:: Common Elements
 */
 
 /* Fundamentals */
@@ -48,7 +49,7 @@ a:hover
 {
 	color: invert($link_color);
 }
-
+ 
 
 #featured
 {
@@ -78,7 +79,7 @@ a:hover
 	{
 		color: $page_background;
 		@include inderfont(60px);	
-		margin: 0px;
+		margin: 0px 0px 15px 0px;
 		line-height: 40px;
 		a
 		{
@@ -168,6 +169,20 @@ footer hr
 .whCopyRight
 {
 	color: $page_color;
+}
+
+/* Common Elements */
+
+.under_construction
+{
+	margin-top: 20px;
+	@include inderfont(18px, invert($page_color));
+	@include panel($page_color, 20px);
+	a
+	{
+		&:link, &:visited, &:active { color: $page_background }
+		&:hover { color: invert($page_color) }
+	}
 }
 
 
