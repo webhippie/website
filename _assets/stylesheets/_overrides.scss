@@ -10,7 +10,7 @@ $link_color: invert($page_color);
 :: Shared Styles
 :: Page: Home
 :: Page: Impressum
-:: ...
+:: Page: Blog
 */
 
 
@@ -241,4 +241,26 @@ footer hr
 	{
 		color: $page_color;
 	}
+}
+
+/* -----------------------------------------
+   Page: Blog
+--------------------------------------------*/
+
+.blogContent
+{
+	margin-top: 20px;
+	@include inderfont(20px,$page_color);
+	h1,h2,h3,h4,h5,h6 
+	{	
+		color: $page_color;
+		font-family: 'Inder', Arial;
+	}
+}
+
+.homeLink
+{
+	&:hover { color: $page_background; }
+	@include inderfont(16px);
+	font-weight: bold;
 }

@@ -33,24 +33,7 @@
 
     {{ content }}
 
-    <footer class="row">
-      <div class="large-12 columns">
-        <hr />
-
-        <div class="row">
-          <div class="large-6 columns">
-            <p class="whCopyRight">&copy; <time>2013</time> {{ site.author }}</p>
-          </div>
-          <div class="large-6 columns">
-            <ul class="inline-list right">
-              <li>
-                <a href="imprint.html">Impressum</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+	{% include footer.html %}
 
     {% javascript app %}
 
