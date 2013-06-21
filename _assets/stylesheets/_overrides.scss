@@ -49,7 +49,11 @@ a:hover
 {
 	color: invert($link_color);
 }
- 
+
+p
+{
+	margin-bottom: 10px;	
+}
 
 #featured
 {
@@ -183,6 +187,10 @@ footer hr
 		&:link, &:visited, &:active { color: $page_background }
 		&:hover { color: invert($page_color) }
 	}
+	h2
+	{
+		font-size: 25px;	
+	}
 }
 
 
@@ -221,6 +229,10 @@ footer hr
 	{
 		@include inderfont(12px);
 		font-weight: 700;
+	}
+	a:hover
+	{
+		color: $page_background;
 	}
 }
 
@@ -264,3 +276,67 @@ footer hr
 	@include inderfont(16px);
 	font-weight: bold;
 }
+
+.postPanel
+{
+	margin-top: 40px;
+	@include inderfont(18px, invert($page_color));
+	a
+	{
+		&:link, &:visited, &:active { color: invert($page_color) }
+		&:hover { color: $page_background }
+	}
+	
+	.postTitle
+	{
+		background-color: $page_color;
+		padding: 10px;
+		@include inderfont(20px);
+	}
+	.postExcerpt
+	{
+		background-color: $page_color;
+		padding: 20px;
+		@include inderfont(15px,invert($page_color));
+		line-height: 17px;
+	}
+	.postDate
+	{
+		background-color: $page_color;
+		padding: 10px;
+		@include inderfont(15px,invert($page_color));
+		line-height: 20px;
+		vertical-align: middle;
+		text-align: center;
+	}
+	.postInfo
+	{
+		background-color: $page_color;
+		padding: 10px;
+		@include inderfont(15px,invert($page_color));
+		span
+		{
+			color: darken(invert($page_color),50%);
+		}
+		a
+		{
+			margin: 0px 2px 0px 2px;
+			&:link, &:visited, &:active
+			{
+				color: darken(invert($page_color),50%);
+			}
+			&:hover
+			{
+				color: $page_background;
+			}		
+		}
+	}
+	.columns
+	{
+		border: 1px solid $page_background;
+	}
+}
+
+
+
+

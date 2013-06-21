@@ -1,8 +1,10 @@
 ---
-layout: blog
+layout: post
 title: Erste Schritte mit Jekyll-Blogging
+author: Armin
 categories: [jekyll, markdown]
 tags: [jekyll, website, markdown, blogging, blog, example]
+excerpt: Dies ist ein Beispiel Post der als Vorlage für das erstellen neuer Posts mit Jekyll dienen soll. Er beinhaltet Überschriften in mehreren Ebenen, sowie einfache Paragraphen und andere Features. Der Post ist in Markdown geschrieben,
 ---
 
 
