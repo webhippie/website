@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+
+		<title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+
+		<meta name="description" content="{{site.description}}" />
+		<meta name="author" content="{{site.author}}" />    
+
+		{% stylesheet app %}
+	</head>
+	<body>
+		<div class="headerBar">
+			<div class="row">
+				<div class="small-12 small-uncentered large-9 large-centered columns">
+					<div id="titleText"><a href="/">{{site.name}}.Blog</a></div>
+				</div>
+			</div>
+		  
+			<div class="row">
+				<div class="small-12 small-uncentered large-9 large-centered columns">
+					<a href="/" class="homeLink">&lt;- Home</a>
+				</div>
+			</div>
+			<!--a class="hide-for-small whBlogButton right">BLOG</a-->
+		</div>
+
+		<!--div class="whSmallBlogButton show-for-small">
+			<a href="#">BLOG</a>
+		</div-->
+
+		<div class="row">
+			<div class="small-12 small-uncentered large-9 large-centered columns blogContent">
+				{{ content }}
+			</div>
+		</div>
+
+		{% include footer.html %}
+
+	</body>
+</html>
