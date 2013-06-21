@@ -5,6 +5,7 @@ author: Webhippie Team
 author_email: mail@webhippie.de
 
 url: http://webhippie.de
+permalink: /blog/:title
 
 assets:
   cache_assets: true
