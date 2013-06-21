@@ -1,5 +1,6 @@
 ---
 layout: blog
+author: Felix Böhm
 title: Webhippie Think Tank
 categories: [thinktank]
 tags: [thinktank, teambuilding, startup, webentwicklung]
