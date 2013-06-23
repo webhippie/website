@@ -24,20 +24,19 @@ function equalizeBoxHeights() {
 	$('.boxHeightContainer').each(function() {  
 		$('.boxHeightColumn', this).css("min-height", 0);
 		
-		var highestBox = 0;
-		var highestBoxRef = null;
+		var highestBox = null;
 
 		$('.boxHeightColumn', this).each(function() {
-			if($(this).height() > highestBox) {
-				highestBox = $(this).height();
-				highestBoxRef = $(this);
-			}
+			if($(this).height() > $(highestBox).height())
+				highestBox = $(this);
 		});
 
-		$('.boxHeightColumn', this).css("min-height", highestBox + 
-			(parseInt($(highestBoxRef).css('padding-top').replace("px", "")) + 
-			 parseInt($(highestBoxRef).css('padding-bottom').replace("px", ""))));
-		$(highestBoxRef).css("min-height", highestBox);
+		var highestOrigSize = $(highestBox).height();
+
+		$('.boxHeightColumn', this).css("min-height", $(highestBox).height() + 
+			(parseInt($(highestBox).css('padding-top').replace("px", "")) + 
+			 parseInt($(highestBox).css('padding-bottom').replace("px", ""))));
+		$(highestBox).css("min-height", highestOrigSize);
 	});    
 }
 
