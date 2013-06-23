@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Inder);
 
+$page_font: 'Inder', Arial;
 $page_color: rgb(0,0,0);
 $page_background: rgb(255,100,0);
 $link_color: invert($page_color);
@@ -50,25 +51,19 @@ a:hover
 	color: invert($link_color);
 }
 
-p
-{
-	margin-bottom: 10px;	
-}
-
 #featured
 {
+	margin: 20px 0px 40px 0px;
 	h1
 	{
 		@include inderfont(35px,$page_color);
-		margin: 40px 0px 0px 0px;
-		padding: 0px 0px 0px 0px;
+		padding: 0px;
 	}
 	
 	.description
 	{
 		@include inderfont(24px,$page_color);
 		line-height: 30px;
-		margin-bottom: 40px;
 	}
 }
 
@@ -155,7 +150,7 @@ p
 	a
 	{
 		font-weight: bold;
-		@include inderfont(20px,$link_color);
+		@include inderfont(20pxunder,$link_color);
 	}
 	a:hover
 	{
@@ -190,6 +185,10 @@ footer hr
 	h2
 	{
 		font-size: 25px;	
+	}
+	p
+	{
+		margin-bottom: 10px;	
 	}
 }
 
@@ -229,6 +228,7 @@ footer hr
 	{
 		@include inderfont(12px);
 		font-weight: 700;
+		margin-bottom: 0px;
 	}
 	a:hover
 	{
@@ -262,12 +262,29 @@ footer hr
 .blogContent
 {
 	margin-top: 20px;
-	@include inderfont(20px,$page_color);
+	@include inderfont(16px,$page_color);
+	line-height: 14px;
+
 	h1,h2,h3,h4,h5,h6 
 	{	
 		color: $page_color;
-		font-family: 'Inder', Arial;
+		font-family: $page_font;
 	}
+	h1 { font-size: 24px }
+	h2 { font-size: 22px; font-style: italic }
+	h3 { font-size: 20px }
+	h4 { font-size: 18px; font-weight: bold; text-decoration: underline }
+	h5 { font-size: 18px; text-decoration: underline }
+	h6 { font-size: 18px; font-weight: bold }
+
+}
+
+.blogTitle
+{
+	background-color: #000;
+	@include inderfont(22px,invert($page_color));
+	margin: 20px 0px 20px 0px;
+	padding: 10px;
 }
 
 .homeLink

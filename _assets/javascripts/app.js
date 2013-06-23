@@ -21,18 +21,23 @@
 //= require_self
 
 function equalizeBoxHeights() {
-	$('#boxHeightContainer').each(function() {  
+	$('.boxHeightContainer').each(function() {  
 		$('.boxHeightColumn', this).css("min-height", 0);
 		
 		var highestBox = 0;
-    
+		var highestBoxRef = null;
+
 		$('.boxHeightColumn', this).each(function() {
 			if($(this).height() > highestBox) {
-			  highestBox = $(this).height(); 
+				highestBox = $(this).height();
+				highestBoxRef = $(this);
 			}
-		});  
+		});
 
-		$('.boxHeightColumn', this).css("min-height", highestBox);
+		$('.boxHeightColumn', this).css("min-height", highestBox + 
+			(parseInt($(highestBoxRef).css('padding-top').replace("px", "")) + 
+			 parseInt($(highestBoxRef).css('padding-bottom').replace("px", ""))));
+		$(highestBoxRef).css("min-height", highestBox);
 	});    
 }
 
@@ -40,20 +45,12 @@ $(document).foundation();
 
 $(document).ready(function() {
 	equalizeBoxHeights();
-  
-	$("#titleText").fitText(
-    1.1, 
-    { maxFontSize: '60px' }
-  );
-  
-	$("#subtitleText").fitText(
-    2.8, 
-    { minFontSize: '0px', maxFontSize: '27px' } 
-  );	
-	
-  $('.members .memberBox').shuffle();
+	$("#titleText").fitText(1.1, { maxFontSize: '60px' });
+	$("#subtitleText").fitText(2.8, { minFontSize: '0px', maxFontSize: '27px' });	
+	$('.members .memberBox').shuffle();
 });
 
 $(window).resize(function() {
 	equalizeBoxHeights();
 });
+

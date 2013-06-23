@@ -7,4 +7,5 @@ tags: [thinktank, teambuilding, startup, webentwicklung]
 excerpt: Ja! Wir wollen Webhippies sein! Coworker diskutieren Ihr Startup.
 ---
 
+Ja! Wir wollen Webhippies sein! Coworker diskutieren Ihr Startup.
 
