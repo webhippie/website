@@ -51,7 +51,7 @@ a:hover
 	color: invert($link_color);
 }
 
-#featured
+.featured
 {
 	margin: 20px 0px 40px 0px;
 	h1
@@ -60,10 +60,14 @@ a:hover
 		padding: 0px;
 	}
 	
-	.description
+	.desc
 	{
 		@include inderfont(24px,$page_color);
 		line-height: 30px;
+	}
+	.descSmall
+	{
+		@include inderfont(18px,$page_color);
 	}
 }
 
@@ -204,8 +208,6 @@ footer hr
 
 /* Members */
 
-
-
 .members .panel
 {
 	margin-top: 0;
@@ -239,6 +241,19 @@ footer hr
 .memberBox
 {
 	margin-bottom: 20px;
+}
+
+.skillBullets
+{
+	margin-top: 30px;
+	.columns
+	{
+		@include inderfont(18px,$page_color);
+	}
+	li
+	{
+		margin-bottom: 10px;
+	}
 }
 
 /* -----------------------------------------
