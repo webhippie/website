@@ -53,21 +53,49 @@ a:hover
 
 .featured
 {
-	margin: 20px 0px 40px 0px;
+	margin: 40px 0px 40px 0px;
 	h1
 	{
 		@include inderfont(35px,$page_color);
 		padding: 0px;
 	}
-	
 	.desc
 	{
 		@include inderfont(24px,$page_color);
 		line-height: 30px;
+		margin-bottom: 40px;
 	}
 	.descSmall
 	{
 		@include inderfont(18px,$page_color);
+	}
+	hr
+	{
+		border-color: $page_color;
+		margin: 10px 0px 10px 0px;
+		padding: 0px;
+	}
+}
+
+.smallBullets
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	.columns
+	{
+		@include inderfont(18px,$page_color);
+	}
+	li
+	{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	ul
+	{
+		margin-bottom: 0px;
+		margin-top: 0px;
 	}
 }
 
@@ -241,19 +269,6 @@ footer hr
 .memberBox
 {
 	margin-bottom: 20px;
-}
-
-.skillBullets
-{
-	margin-top: 30px;
-	.columns
-	{
-		@include inderfont(18px,$page_color);
-	}
-	li
-	{
-		margin-bottom: 10px;
-	}
 }
 
 /* -----------------------------------------
