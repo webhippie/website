@@ -112,6 +112,7 @@ a:hover
 		@include inderfont(60px);	
 		margin: 0px 0px 15px 0px;
 		line-height: 40px;
+		text-transform:uppercase;
 		a
 		{
 			color: $page_background;
@@ -125,7 +126,7 @@ a:hover
 	h3
 	{
 		color: $page_background;
-		@include inderfont(27px);
+		@include inderfont(27px,rgb(255,233,175));
 		margin: 0px;
 		font-weight: normal;
 
