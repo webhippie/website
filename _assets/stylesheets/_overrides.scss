@@ -105,7 +105,7 @@ a:hover
 .headerBar
 {
 	background-color: $page_color;
-	padding: 50px 0px 45px 0px;
+	padding: 50px 0px 45px 150px;
 	#titleText
 	{
 		color: $page_background;
@@ -189,6 +189,17 @@ a:hover
 	{
 		color: $page_background;
 	}
+}
+
+#wimpel
+{
+	position: absolute;
+	width: 100px;
+	height: 245px;
+	z-index: 100001;
+	
+	left:50px;
+	top:0px;
 }
 
 /* Footer */
