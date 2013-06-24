@@ -53,7 +53,7 @@ a:hover
 
 .featured
 {
-	margin: 40px 0px 40px 0px;
+	margin: 80px 0px 40px 0px;
 	h1
 	{
 		@include inderfont(35px,$page_color);
@@ -105,7 +105,7 @@ a:hover
 .headerBar
 {
 	background-color: $page_color;
-	padding: 50px 0px 45px 150px;
+	padding: 50px 0px 45px 0px;
 	#titleText
 	{
 		color: $page_background;
@@ -137,13 +137,21 @@ a:hover
 	}
 }
 
+@media #{$small} 
+{ 
+	.headerBar
+	{
+		padding: 50px 0px 45px 150px;
+	}
+}
+
 .whBlogButton
 {
 	z-index: 100000;
 	position: absolute;
 	
 	top: 100px;
-	right: 112px;
+	right: 80px;
 
 	@include prefixer(border-radius, 50%, spec);
 	background-color: $page_background;
