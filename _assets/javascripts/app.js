@@ -51,9 +51,10 @@ function equalizeBoxHeights() {
 				highestBox = $(this);
 		});
 
-		$('.boxHeightColumn', this).css("height", $(highestBox).height() + 
-			(parseInt($(highestBox).css('padding-top').replace("px", "")) + 
-			 parseInt($(highestBox).css('padding-bottom').replace("px", ""))));
+		$('.boxHeightColumn', this).css("height", $(highestBox).height()
+		 + (parseInt($(highestBox).css('padding-top').replace("px", "")) 
+		 + (parseInt($(highestBox).css('padding-bottom').replace("px", ""))
+		 )));
 	});    
 }
 
