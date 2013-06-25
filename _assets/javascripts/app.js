@@ -45,6 +45,12 @@ $(document).ready(function() {
 	$("#subtitleText").fitText(2.8, { minFontSize: '0px', maxFontSize: '27px' });	
 	$('.members .memberBox').shuffle();
 
+	// Preloading Images
+	$(".memberBox img").each(function () {
+		$('<img/>')[0].src = $(this).data("prifileurl");
+	});	
+	
+
 	$(".memberBox img").mouseenter(function () {
 		$(this).attr("src",$(this).data("profileurl"));
 	});
