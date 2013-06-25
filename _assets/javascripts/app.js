@@ -44,6 +44,13 @@ $(document).ready(function() {
 	$("#titleText").fitText(1.1, { maxFontSize: '60px' });
 	$("#subtitleText").fitText(2.8, { minFontSize: '0px', maxFontSize: '27px' });	
 	$('.members .memberBox').shuffle();
+
+	$(".memberBox img").mouseenter(function () {
+		$(this).attr("src",$(this).data("profileurl"));
+	});
+	$(".memberBox img").mouseleave(function () {
+		$(this).attr("src",$(this).data("baseurl"));
+	});
 });
 
 $(window).load(function() {
@@ -53,4 +60,6 @@ $(window).load(function() {
 $(window).resize(function() {
 	equalizeBoxHeights();
 });
+
+
 
