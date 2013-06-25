@@ -286,9 +286,37 @@ footer hr
 	}
 }
 
+
+
 .memberBox
 {
 	margin-bottom: 20px;
+
+
+
+	.memberPic
+	{
+		width: 100%;
+		padding-bottom: 133%;
+		display: inline-block;
+		background-color: $page_color;
+		background-size: cover;
+	
+		transition: all 0.25s;
+	}
+
+	#felixPic { background-image: url(asset_path('felix.jpg')) }
+	#felixPic:hover { background-image: url(asset_path('felix_profile.jpg')) }	
+	#sebastianPic { background-image: url(asset_path('sebastian.jpg')) }
+	#sebastianPic:hover { background-image: url(asset_path('sebastian_profile.jpg')) }	
+	#thomasPic { background-image: url(asset_path('thomas.jpg')) }
+	#thomasPic:hover { background-image: url(asset_path('thomas_profile.jpg')) }	
+	#frankaPic { background-image: url(asset_path('franka.jpg')) }
+	#frankaPic:hover { background-image: url(asset_path('franka_profile.jpg')) }	
+	#danyelPic { background-image: url(asset_path('danyel.jpg')) }
+	#danyelPic:hover { background-image: url(asset_path('danyel_profile.jpg')) }	
+	#arminPic { background-image: url(asset_path('armin.jpg')) }
+	#arminPic:hover { background-image: url(asset_path('armin_profile.jpg')) }
 }
 
 /* -----------------------------------------

@@ -20,26 +20,6 @@
 //= require foundation/foundation.section
 //= require_self
 
-//function equalizeBoxHeights() {
-//	$('.boxHeightContainer').each(function() {  
-//		$('.boxHeightColumn', this).css("min-height", 0);
-//		
-//		var highestBox = null;
-
-//		$('.boxHeightColumn', this).each(function() {
-//			if($(this).height() > $(highestBox).height())
-//				highestBox = $(this);
-//		});
-
-//		var highestOrigSize = $(highestBox).height();
-
-//		$('.boxHeightColumn', this).css("min-height", $(highestBox).height() + 
-//			(parseInt($(highestBox).css('padding-top').replace("px", "")) + 
-//			 parseInt($(highestBox).css('padding-bottom').replace("px", ""))));
-//		$(highestBox).css("min-height", highestOrigSize);
-//	});    
-//}
-
 function equalizeBoxHeights() {
 	$('.boxHeightContainer').each(function() {  
 		$('.boxHeightColumn', this).css("height", "");
