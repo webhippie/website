@@ -47,7 +47,7 @@ $(document).ready(function() {
 
 	// Preloading Images
 	$(".memberBox img").each(function () {
-		$('<img/>')[0].src = $(this).data("prifileurl");
+		$('<img/>')[0].src = $(this).data("profileurl");
 	});	
 	
 
