@@ -3,3 +3,11 @@
 	font-size: $size;
 	color: $color;
 }
+
+@mixin link-color($normalcolor, $hovercolor) {
+	a
+	{
+		&:link, &:focus, &:active, &:visited { color: $normalcolor }
+		&:hover { color: $hovercolor }
+	}
+}

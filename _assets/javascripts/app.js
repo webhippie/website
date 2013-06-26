@@ -42,7 +42,7 @@ $(document).foundation();
 
 $(document).ready(function() {
 	$("#titleText").fitText(1.1, { maxFontSize: '60px' });
-	$("#subtitleText").fitText(2.8, { minFontSize: '0px', maxFontSize: '27px' });	
+	$("#subtitleText").fitText(2.8, { maxFontSize: '24px' });	
 	$('.members .memberBox').shuffle();
 
 	// Preloading Images

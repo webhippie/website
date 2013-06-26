@@ -3,7 +3,8 @@
 $page_font: 'Inder', Arial;
 $page_color: rgb(0,0,0);
 $page_background: rgb(255,100,0);
-$link_color: invert($page_color);
+$page_compliment: rgb(255,233,175);
+$link_color: $page_compliment;
 
 /* -------------------------------------------------- 
    Table of Contents
@@ -67,7 +68,7 @@ a:hover
 	}
 	.descSmall
 	{
-		@include inderfont(18px,$page_color);
+		@include inderfont(15px,$page_color);
 	}
 	hr
 	{
@@ -75,6 +76,11 @@ a:hover
 		margin: 10px 0px 10px 0px;
 		padding: 0px;
 	}
+}
+
+.bottomFeatured
+{
+	margin-top: 50px;
 }
 
 .smallBullets
@@ -85,7 +91,7 @@ a:hover
 	padding-bottom: 5px;
 	.columns
 	{
-		@include inderfont(18px,$page_color);
+		@include inderfont(15px,$page_color);
 	}
 	li
 	{
@@ -97,6 +103,11 @@ a:hover
 		margin-bottom: 0px;
 		margin-top: 0px;
 	}
+}
+
+.spaceBottom
+{
+	margin-bottom: 40px;
 }
 
 
@@ -126,7 +137,7 @@ a:hover
 	h3
 	{
 		color: $page_background;
-		@include inderfont(27px,rgb(255,233,175));
+		@include inderfont(24px,$page_compliment);
 		margin: 0px;
 		font-weight: normal;
 
@@ -212,14 +223,16 @@ a:hover
 
 /* Footer */
 
-footer hr
+.footer
 {
-	border-color: $page_color;
-}
-
-.whCopyRight
-{
-	color: $page_color;
+	padding-top: 20px;
+	background-color: $page_color;
+	color: $page_background;
+	a
+	{
+		&:link, &:visited, &:active { color: $page_compliment }
+		&:hover { color: $page_background }
+	}
 }
 
 /* Common Elements */
@@ -265,19 +278,21 @@ footer hr
 
 	h2
 	{
-		@include inderfont(16px);		
+		@include inderfont(16px,$page_compliment);
+		text-transform: uppercase;		
 		padding: 0;
 		margin: 0px 0px 8px 0px; 
 	}
 	h3
 	{
-		@include inderfont(12px);
+		@include inderfont(14px);
+		text-transform: uppercase;
 		margin: 20px 0px 20px 0px;
 	}
 	p
 	{
-		@include inderfont(12px);
-		font-weight: 700;
+		@include inderfont(14px);
+		font-weight: normal;
 		margin-bottom: 0px;
 	}
 	a:hover
@@ -291,6 +306,27 @@ footer hr
 .memberBox
 {
 	margin-bottom: 20px;
+}
+
+.colorBlock
+{
+	background-color: $page_color;
+	.featured
+	{
+		margin: 30px 0px 15px 0px;
+		color: $page_background;
+	}
+	.descSmall
+	{
+		color: $page_background;
+		@include link-color($page_compliment,$page_background);
+	}
+	.smallBullets .columns
+	{
+		color: $page_background;
+		@include link-color($page_compliment,$page_background);
+	}
+	border-bottom: 1px solid $page_background;
 }
 
 /* -----------------------------------------
