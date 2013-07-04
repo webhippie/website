@@ -355,7 +355,7 @@ a:hover
 .blogContent
 {
 	margin-top: 20px;
-	@include inderfont(16px,$page_color);
+	@include inderfont(15px,$page_color);
 	line-height: 14px;
 
 	h1,h2,h3,h4,h5,h6 
@@ -369,7 +369,6 @@ a:hover
 	h4 { font-size: 18px; font-weight: bold; text-decoration: underline }
 	h5 { font-size: 18px; text-decoration: underline }
 	h6 { font-size: 18px; font-weight: bold }
-
 }
 
 .blogTitle
@@ -451,9 +450,11 @@ a:hover
 {
 	text-align: center;
 	background-color: $page_color;
-	@include inderfont(37px, invert($page_color));
+	@include inderfont(24px, invert($page_color));
 	padding-left: 10px;
 	padding-right: 10px;
+	font-weight: normal;
+	margin-top: 55px;
 }
 
 
