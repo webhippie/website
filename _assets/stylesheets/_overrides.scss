@@ -148,6 +148,11 @@ a:hover
 	}
 }
 
+.noSideFix
+{
+	padding-left: 0px;
+}
+
 @media #{$small} 
 { 
 	.headerBar
@@ -442,6 +447,14 @@ a:hover
 	}
 }
 
+.tagtitle
+{
+	text-align: center;
+	background-color: $page_color;
+	@include inderfont(37px, invert($page_color));
+	padding-left: 10px;
+	padding-right: 10px;
+}
 
 
 
