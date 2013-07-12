@@ -354,9 +354,10 @@ a:hover
 
 .blogContent
 {
-	margin-top: 20px;
-	@include inderfont(15px,$page_color);
+	background-color: $page_color;
+	@include inderfont(15px,$page_background);
 	line-height: 14px;
+	padding: 40px;
 
 	h1,h2,h3,h4,h5,h6 
 	{	
@@ -443,6 +444,74 @@ a:hover
 	.columns
 	{
 		border: 1px solid $page_background;
+	}
+}
+
+.postPanel2
+{
+	margin-top: 40px;
+	@include inderfont(18px, invert($page_color));
+	a
+	{
+		&:link, &:visited, &:active { color: invert($page_color) }
+		&:hover { color: $page_background }
+	}
+	
+	.postTitle
+	{
+		background-color: $page_color;
+		line-height: 36px;
+		padding-left: 33px;
+		@include inderfont(20px);
+	}
+	.postExcerpt
+	{
+		background-color: $page_color;
+		padding: 20px;
+		@include inderfont(15px,invert($page_color));
+		line-height: 17px;
+	}
+	.postDate
+	{
+		background-color: $page_background;
+		@include inderfont(15px,$page_compliment);
+		line-height: 32px;
+		vertical-align: middle;
+		text-align: center;
+		border: 2px solid $page_color;
+		box-sizing: border-box;
+		height: 100%;
+	}
+	.postInfo
+	{
+		background-color: $page_color;
+		padding: 10px;
+		@include inderfont(15px,invert($page_color));
+		span
+		{
+			color: darken(invert($page_color),50%);
+		}
+		a
+		{
+			margin: 0px 2px 0px 2px;
+			&:link, &:visited, &:active
+			{
+				color: darken(invert($page_color),50%);
+			}
+			&:hover
+			{
+				color: $page_background;
+			}		
+		}
+	}
+	.columns
+	{
+		padding: 2px;
+	}
+
+	.upperBar .columns
+	{
+		height: 40px;
 	}
 }
 

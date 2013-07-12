@@ -8,9 +8,6 @@ excerpt: Dies ist ein Beispiel Post der als Vorlage für das erstellen neuer Pos
 ---
 
 
-Erste Schritte mit Jekyll-Blogging
-==================================
-
 Beispiel Post
 -------------
 
