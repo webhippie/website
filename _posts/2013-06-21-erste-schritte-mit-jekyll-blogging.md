@@ -9,7 +9,7 @@ excerpt: Dies ist ein Beispiel Post der als Vorlage für das erstellen neuer Pos
 
 
 Beispiel Post
--------------
+=============
 
 Dies ist ein Beispiel Post der als Vorlage für das erstellen neuer Posts mit Jekyll dienen soll.
 Er beinhaltet Überschriften in mehreren Ebenen, sowie einfache Paragraphen und andere Features.
@@ -31,7 +31,7 @@ Mehrere Features
 In diesem Post werden mehrere Features von Markdown demonstriert. Hier eine kleine Auflistung darüber
 wozu diese Datei als Vorlage dienen kann:
 
-### Standard Text Darstellung
+##### Standard Text Darstellung
 
 *	Betonung von Text durch:
 	1.	Kursivschrift
@@ -39,7 +39,7 @@ wozu diese Datei als Vorlage dienen kann:
 *	Überschriften in verschiedenen Ebenen
 *	Gewöhnliche Paragraphen
 
-### Erweiterte Text Darstellung
+##### Erweiterte Text Darstellung
 
 *	Code Blöcke
 *	Sortierte- und Unsortierte Listen
@@ -49,5 +49,15 @@ Und Markdown kann garantiert noch mehr. Schaut mal [hier!](http://daringfireball
 
 
 *Fazit: Markdown ist garnicht übel ^^*
+
+{% highlight ruby linenos%}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb 
+    format.json { render json: @widget }
+  end
+end
+{% endhighlight %}
 
 

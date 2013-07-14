@@ -10,6 +10,7 @@
 		<meta name="author" content="{{site.author}}" />    
 
 		{% stylesheet app %}
+		{% stylesheet pygments %}
 	</head>
 	<body>
 		<div class="headerBar">
@@ -31,12 +32,45 @@
 			<a href="#">BLOG</a>
 		</div-->
 
-		<div class="row">
-			<div class="small-12 small-uncentered large-9 large-centered columns blogTitle">
-				{{ page.title }}
-			</div>
-			<div class="small-12 small-uncentered large-9 large-centered columns blogContent">			
-				{{ content }}
+		<div class="row spaceBottom">
+			<div class="small-12 small-uncentered large-9 large-centered columns postPanel">
+				<div class="row smallBar">		
+					<div class="small-9 columns">
+						<div class="postAvatar hide-for-small">
+							<img src="{% asset_path the_hip_one.png %}"/>
+						</div>						
+						<div class="postTitle">
+							{{ page.title }}
+						</div>
+					</div>
+					<div class="small-3 columns">
+						<div class="postDate">
+							{{ page.date | date: "%d.%m.%Y" }}
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-12 columns">
+						<div class="blogContent">
+							{{ content }} 
+						</div>			
+					</div>
+				</div>
+				<div class="row smallBar">
+					<div class="small-3 columns">
+						<div class="postInfo">
+							Author: <span>{{ page.author }}</span>
+						</div>
+					</div>
+					<div class="small-9 columns">
+						<div class="postInfo">
+							Tags:
+							{% for tag in page.tags %}
+								<a href="/tag/{{ tag }}">{{ tag }}</a>
+							{% endfor %}
+						</div>	
+					</div>		
+				</div>	
 			</div>
 		</div>
 

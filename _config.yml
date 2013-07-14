@@ -17,3 +17,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
+
+pygments: true
