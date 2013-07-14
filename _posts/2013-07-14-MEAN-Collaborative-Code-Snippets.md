@@ -52,7 +52,13 @@ git clone https://github.com/madhums/node-express-mongoose-demo.git
 * Hier wurde Bootstrap mit verwurstet: [Node, Express, Angular, Bootstrap](https://github.com/jimakker/angular-express-bootstrap-seed)
 
 ## Code Snippets Konzept
-Armin??
+Das Tool hat ein Web-Interface mit folgenden Features:
+* Snippets verwalten (Titel, Tags, Code, Sprache, Insert-Code)
+* Snippets Suchen
+* Permalinks zu den Snippets
+* Accounts für Autoren
+
+Neben dem gewöhnlichen Weg, die Snippets aus dem Browser zu kopieren, gibt es auch die Möglichkeit die sie direkt im Text-Editor einzufügen. Dafür werden Plugins für die entsprechenden Programme benutzt, welche Prüfen ob die zuletzt getippte Zeichenfolge einem Insert-Code entspricht (z.B. "\[c++ hello world\]") und in diesem Fall, beim benutzen eines shortcuts, den Code mit dem Snippet ersetzt. 
 
 
 
