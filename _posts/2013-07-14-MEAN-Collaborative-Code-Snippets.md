@@ -19,7 +19,7 @@ Erstmal Installieren
 * node - ausführlich hier: [http://howtonode.org/how-to-install-nodejs](http://howtonode.org/how-to-install-nodejs) {% highlight bash %} brew install node # Mac OS{% endhighlight %}
 * npm {% highlight bash %} curl https://npmjs.org/install.sh | sh # Mac OS & Linux {% endhighlight %}
 * MongoDB [Installation](http://docs.mongodb.org/manual/tutorial/) {% highlight bash %} brew install mongodb # Mac OS {% endhighlight %}
-* Moongoose {% highlight bash %} npm install mongoose {% endhighlight %}
+* Mongoose {% highlight bash %} npm install mongoose {% endhighlight %}
 
 oder Updaten {% highlight bash %}
 sudo npm update npm -g  # Cool: Update dich selbst!
@@ -44,11 +44,11 @@ git clone git://github.com/btford/angular-express-seed my-project
 {% endhighlight %}
   von [http://briantford.com/blog/angular-express.html](http://briantford.com/blog/angular-express.html)
 * Slideshare zu [The MEAN Stack: MongoDB, ExpressJS, AngularJS and Node.js](http://de.slideshare.net/mongodb/mongodb2-21677032)
-  Berichtet über den Einsatz von [Moongoose](http://mongoosejs.com/)
-* Node, Express, Moongoose Seed Projekt {% highlight bash %}
+  Berichtet über den Einsatz von [Mongoose](http://mongoosejs.com/)
+* Node, Express, Mongoose Seed Projekt {% highlight bash %}
 git clone https://github.com/madhums/node-express-mongoose-demo.git
 {% endhighlight %}
-* Moongoose Tutorial [Mongoose and Node.js](http://theholmesoffice.com/mongoose-and-node-js-tutorial/)
+* Mongoose Tutorial [Mongoose and Node.js](http://theholmesoffice.com/mongoose-and-node-js-tutorial/)
 * Hier wurde Bootstrap mit verwurstet: [Node, Express, Angular, Bootstrap](https://github.com/jimakker/angular-express-bootstrap-seed)
 
 ## Code Snippets Konzept
