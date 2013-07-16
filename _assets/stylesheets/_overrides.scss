@@ -419,10 +419,10 @@ code
 .postPanel
 {
 	margin-top: 40px;
-	@include inderfont(18px, invert($page_color));
+	@include inderfont(18px, $page_compliment);
 	a
 	{
-		&:link, &:visited, &:active { color: invert($page_color) }
+		&:link, &:visited, &:active { color: $page_compliment }
 		&:hover { color: $page_background }
 	}
 	
