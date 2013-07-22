@@ -54,7 +54,7 @@ title: Dein Titel
 author: #{name}
 categories: []
 tags: []
-excerpt: Hier gehört deine Post-Beschreibung hin.
+excerpt: Hier gehoert deine Post-Beschreibung hin.
 ---
 
 EOF
