@@ -101,6 +101,20 @@ code
 	}
 }
 
+.present-text
+{
+	@include inderfont(15px,$page_color);
+	h1,h2,h3,h4,h5,h6
+	{
+		color: $page_color;
+	}
+	li
+	{
+		@include inderfont(15px,$page_color);
+		@include link-color($page_compliment, $page_color);
+	}
+}
+
 .bottomFeatured
 {
 	margin-top: 50px;
