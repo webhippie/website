@@ -73,8 +73,6 @@ code
 	}
 }
 
-
-
 .featured
 {
 	margin: 80px 0px 40px 0px;
@@ -142,11 +140,9 @@ code
 	}
 }
 
-.spaceBottom
-{
-	margin-bottom: 40px;
-}
-
+.spaceBottom { margin-bottom: 40px !important; }
+.spaceTop {	margin-top: 40px !important; }
+.spaceBoth { margin-top: 40px !important; margin-bottom: 40px !important; }
 
 /* Header */
 

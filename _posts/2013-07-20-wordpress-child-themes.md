@@ -4,7 +4,6 @@ title: Wordpress Child-Themes
 author: Armin Boß
 categories: [wordpress, webdev]
 tags: [wordpress, themes, webdev, blogging]
-excerpt: Ich möchte hier anhand einer kleinen Anleitung kurz demonstrieren wie sehr es *flowt* mit Jekyll Blogposts zu schreiben.
 ---
 
 Child Themes in Wordpress sind ein sauberer Weg um Themes zu entwickeln die auf bereits vorhandenen Themes aufbauen.

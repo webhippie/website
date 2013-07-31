@@ -27,26 +27,8 @@
 
   </head>
   <body>
-  	<div class="headerBar">
-  		<div class="row">
-  			<div class="small-12 large-9 columns">
-  				<div id="titleText"><a href="/">.Webhippie United.</a></div>
-  			</div>
-  		</div>
-      
-  		<div class="row">
-  			<div class="small-12 large-9 columns">
-  				<h3 id="subtitleText">FREE&emsp;|&emsp;INDYPENDENT&emsp;|&emsp;INNOVATIV&emsp;|&emsp;SUPERCOOL</h3>
-  			</div>
-  		</div>
-  		<a href="/blog.html" class="hide-for-small whBlogButton right">BLOG</a>
-		<img id="wimpel" class="hide-for-small" src="{% asset_path wimpel.png %}"/>
-  	</div>
 
-  	<div class="whSmallBlogButton show-for-small">
-  		<a href="/blog.html">BLOG</a>
-  	</div>
-
+  {% include header.html %}
 
 	{{ content }}
 

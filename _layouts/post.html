@@ -27,26 +27,14 @@
 		</script>
 	</head>
 	<body>
-		<div class="headerBar">
-			<div class="row">
-				<div class="small-12 small-uncentered large-9 large-centered columns">
-					<div id="titleText"><a href="/blog.html">{{site.name}}.Blog</a></div>
-				</div>
-			</div>
-		  
-			<div class="row">
-				<div class="small-12 small-uncentered large-9 large-centered columns">
-					<a href="/" class="homeLink">&lt;- Home</a>
-				</div>
-			</div>
-			<!--a class="hide-for-small whBlogButton right">BLOG</a-->
-		</div>
+
+		{% include header.html %}
 
 		<!--div class="whSmallBlogButton show-for-small">
 			<a href="#">BLOG</a>
 		</div-->
 
-		<div class="row spaceBottom">
+		<div class="row spaceBoth">
 			<div class="small-12 small-uncentered large-9 large-centered columns postPanel">
 				<div class="row upperBar">		
 					<div class="small-9 columns">
@@ -73,7 +61,7 @@
 				<div class="row lowerBar">
 					<div class="small-3 columns">
 						<div class="postInfo">
-							Author: <span>{{ page.author }}</span>
+							<span>{{ page.author }}</span>
 						</div>
 					</div>
 					<div class="small-9 columns">

@@ -1,11 +1,12 @@
 ---
 layout: postlist
 ---
-<div class="small-12 small-uncentered large-9 large-centered columns">
-	<div class="row">	
+<div class="row spaceTop">	
+	<div class="small-12 small-uncentered large-9 large-centered columns">
 		<h2 class="tagtitle">{{page.title}}</h2>
 	</div>
 </div>
+
 	<!--ul-->
 	{% for post in site.posts %}
 	{% for tag in post.tags %}
@@ -37,7 +38,7 @@ layout: postlist
 		<div class="row lowerBar">
 			<div class="small-3 columns">
 				<div class="postInfo">
-					Author: <span>{{ post.author }}</span>
+					<span>{{ post.author }}</span>
 				</div>
 			</div>
 			<div class="small-9 columns">
