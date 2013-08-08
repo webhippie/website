@@ -11,30 +11,32 @@
 
 		{% stylesheet app %}
 		{% stylesheet pygments %}
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-42786921-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
 	</head>
 	<body>
-		<div class="headerBar">
-			<div class="row">
-				<div class="small-12 small-uncentered large-9 large-centered columns">
-					<div id="titleText"><a href="/blog.html">{{site.name}}.Blog</a></div>
-				</div>
-			</div>
-		  
-			<div class="row">
-				<div class="small-12 small-uncentered large-9 large-centered columns">
-					<a href="/" class="homeLink">&lt;- Home</a>
-				</div>
-			</div>
-			<!--a class="hide-for-small whBlogButton right">BLOG</a-->
-		</div>
+
+		{% include header.html %}
 
 		<!--div class="whSmallBlogButton show-for-small">
 			<a href="#">BLOG</a>
 		</div-->
 
-		<div class="row spaceBottom">
+		<div class="row spaceBoth">
 			<div class="small-12 small-uncentered large-9 large-centered columns postPanel">
-				<div class="row smallBar">		
+				<div class="row upperBar">		
 					<div class="small-9 columns">
 						<div class="postAvatar hide-for-small">
 							<img src="{% asset_path the_hip_one.png %}"/>
@@ -56,10 +58,10 @@
 						</div>			
 					</div>
 				</div>
-				<div class="row smallBar">
+				<div class="row lowerBar">
 					<div class="small-3 columns">
 						<div class="postInfo">
-							Author: <span>{{ page.author }}</span>
+							<span>{{ page.author }}</span>
 						</div>
 					</div>
 					<div class="small-9 columns">
