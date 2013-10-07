@@ -4,7 +4,7 @@ title: Custom Forms mit Foundation
 author: Armin Boß
 categories: [foundation, css]
 tags: [foundation, website, webdev, css, forms]
-excerpt: Foundation
+excerpt: Das Foundation CSS Framework von ZURB bietet uns neben vielen anderen grossartigen Features auch die Möglichkeit HTML Formular Elemente sehr einfach mit CSS zu stylen. Foundation stellt dazu fertige CSS Klassen und Javascript Methoden bereit die uns die Arbeit mit selbst gestalteten Formularen deutlich erleichtern. Wie das ganze funktioniert, und wie man die Optik und das Verhalten der Elemente auf ein Professionelles Niveau bringt werde ich hier kurz zeigen.
 ---
 
 Das Feature
