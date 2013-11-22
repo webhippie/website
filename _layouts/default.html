@@ -10,28 +10,25 @@
     <meta name="author" content="{{site.author}}" />    
 
   	{% stylesheet app %}
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-42786921-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
   </head>
   <body>
-  	<div class="headerBar">
-  		<div class="row">
-  			<div class="small-12 large-9 columns">
-  				<div id="titleText"><a href="/">.Webhippie United.</a></div>
-  			</div>
-  		</div>
-      
-  		<div class="row">
-  			<div class="small-12 large-9 columns">
-  				<h3 id="subtitleText">FREE&emsp;|&emsp;INDYPENDENT&emsp;|&emsp;INNOVATIV&emsp;|&emsp;SUPERCOOL</h3>
-  			</div>
-  		</div>
-  		<a href="/blog.html" class="hide-for-small whBlogButton right">BLOG</a>
-		<img id="wimpel" class="hide-for-small" src="{% asset_path wimpel.png %}"/>
-  	</div>
 
-  	<div class="whSmallBlogButton show-for-small">
-  		<a href="/blog.html">BLOG</a>
-  	</div>
-
+  {% include header.html %}
 
 	{{ content }}
 
