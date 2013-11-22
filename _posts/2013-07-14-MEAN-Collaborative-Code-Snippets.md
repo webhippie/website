@@ -50,8 +50,13 @@ git clone https://github.com/madhums/node-express-mongoose-demo.git
 {% endhighlight %}
 * Moongoose Tutorial [Mongoose and Node.js](http://theholmesoffice.com/mongoose-and-node-js-tutorial/)
 * Hier wurde Bootstrap mit verwurstet: [Node, Express, Angular, Bootstrap](https://github.com/jimakker/angular-express-bootstrap-seed)
+* [ExpressOnSteroids](https://github.com/the-teacher/ExpressOnSteroids)
+* [Express MongoDB](http://howtonode.org/f8553a94aea5117c7236bb73cf85340269ea6602/express-mongodb)
+* [Mongo Tutorial](http://blog.ijasoneverett.com/2013/03/a-sample-app-with-node-js-express-and-mongodb-part-1/)
 
 ## Code Snippets Konzept
+
+* [Snippets in Sublime](http://www.sublimetext.com/docs/key-bindings)
 Armin??
 
 
