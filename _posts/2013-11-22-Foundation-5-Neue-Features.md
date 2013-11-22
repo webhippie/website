@@ -23,7 +23,7 @@ Alle mitgelieferten GUI Elemente in Foundation 5 sind in einem neuen minimalisti
 <div style="text-align: center">
   <img src="{% asset_path blog/foundation_minimalistic.jpg %}" style="width: auto; padding-bottom: 20px;"/>
 </div>
-
+ 
 Das neue Design erleichtert uns Webentwickler das Leben mit Designern und Kunden enorm, da zurzeit viele Webseiten in einem schlicht gehaltenem Stil gewünscht werden.
 
 
@@ -33,8 +33,8 @@ Massives Interchange Upgrade
 Interchange ist ein Javascript Plugin für Foundation das seit Version 4 dafür sorgt das man auf verschiedenen Bildschirm größen verschiedene Bilder laden kann.
 Auf einem kleinen Bildschirm kann Beispielsweise ein Bild in einer geringeren Auflösung geladen werden als auf einem Grossen. Die Betonung liegt hierbei auf "laden", denn die Inhalte werden nicht nur versteckt oder eingeblendet, wie bei den "hide-for-" und "show-for-" CSS Klassen, sondern sie werden nicht einmal geladen wenn sie nicht benötigt werden und verringern deshalb auch nicht die Ladegeschwindigkeit der Seite.
 
-Mit Foundation 5 hat Interchange nochmal deutlich an Power gewonnen, denn nun können nicht nur Bilder je nach Bildschirmgrösse ausgetauscht werden sondern jeder Beliebige Inhalt.
-Mit Interchange hat man nun die Möglichkeit HTML Partials (und Bilder links) dynamisch laden zu können. Dabei gibt man einem HTML Element, z.B. einem DIV, ein data-attribute names "data-interchange" in dem Links zu verschiedenen html Dateien stehen die zu einer Viewport-Grösse zugeordnet werden.
+Mit Foundation 5 hat Interchange nochmal deutlich an Power gewonnen, denn nun können nicht nur Bilder je nach Bildschirmgrösse ausgetauscht werden sondern jeder beliebige Inhalt.
+Mit Interchange hat man nun die Möglichkeit HTML Partials (und Bilder links) dynamisch zu laden. Dabei gibt man einem HTML Element, z.B. einem DIV, ein data-attribute names "data-interchange" in dem Links zu verschiedenen html Dateien stehen die zu einer Viewport-Grösse zugeordnet werden.
 
 {% highlight html linenos %}
     <div data-interchange="[/pfad/klein.html, (small)], [/pfad/gross.html, (large)]"> 
@@ -44,11 +44,22 @@ Mit Interchange hat man nun die Möglichkeit HTML Partials (und Bilder links) dy
 
 Der Inhalt des Containers mit dem data-interchange Attribut wird dabei komplett durch das geladene HTML Partial ausgetauscht, je nachdem welcher Viewport gerade aktiv ist.
 
-Sexy!
+
+Medium Viewport Support
+-----------------------
+
+Der Medium Viewport wird nun vollständig unterstützt, sowohl auf der Scss Seite als auch in allen anderen Foundation Features. Sexy!
 
 
+Community und Dokumentation
+---------------------------
 
+Zurb hat für Foundation nun ein Forum eingerichtet auf dem man sich über sein Lieblings CSS-Framework austauschen kann.
+Das wird dazu führen das viele Code Beispiele zur Verfügung stehen, und man bei dringenden Problemen sofort Unterstützung finden kann.
+Erwähnenswert ist auch dass das Forum im Bewährten StackExchange Stil gehalten ist.
 
+Die Dokumentation wurde ebenfalls komplett neu aufgezogen und ist um einiges Detailierter und einfacher Verständlich.
+Neulingen sollte es nun bedeutend einfacher fallen den Umgang mit Foundation zu lernen
 
 
 
