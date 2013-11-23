@@ -46,8 +46,8 @@ Neulingen sollte es nun bedeutend einfacher fallen den Umgang mit Foundation zu 
 Massives Interchange Upgrade
 ----------------------------
 
-Interchange ist ein Javascript Plugin für Foundation, das seit Version 4 dafür sorgt das man auf verschiedenen Bildschirm Größen verschiedene Bilder laden kann.
-Auf einem kleinen Bildschirm kann Beispielsweise ein Bild in einer geringeren Auflösung geladen werden als auf einem Grossen. Die Betonung liegt hierbei auf "laden", denn die Inhalte werden nicht nur versteckt oder eingeblendet, wie bei den "hide-for-" und "show-for-" CSS Klassen, sondern sie werden tatsächlich nicht geladen wenn sie nicht benötigt werden und zehren deshalb auch nicht an der Ladegeschwindigkeit der Seite.
+Interchange ist ein Javascript Plugin für Foundation, das seit Version 4 dafür sorgt dass man auf verschiedenen Bildschirmgrößen verschiedene Bilder laden kann.
+Auf einem kleinen Bildschirm kann beispielsweise ein Bild in einer geringeren Auflösung geladen werden als auf einem Grossen. Die Betonung liegt hierbei auf "laden", denn die Inhalte werden nicht nur versteckt oder eingeblendet, wie bei den "hide-for-" und "show-for-" CSS Klassen, sondern sie werden tatsächlich nicht geladen wenn sie nicht benötigt werden und zehren deshalb auch nicht an der Ladegeschwindigkeit der Seite.
 
 Mit Foundation 5 hat Interchange nochmal deutlich an Power gewonnen, denn nun können nicht nur Bilder je nach Bildschirmgrösse ausgetauscht werden sondern jeder beliebige Inhalt.
 Mit Interchange hat man nun die Möglichkeit HTML Partials (und Bilder URLs) dynamisch zu laden. Dabei gibt man einem HTML Element, z.B. einem DIV, ein Data-Attribut namens "data-interchange", in dem Links zu verschiedenen HTML Dateien stehen die zu einer Viewport-Grösse zugeordnet werden.
@@ -64,7 +64,7 @@ Sublime Snippets
 ----------------
 
 Ebenfalls spannend wird es für Benutzer des beliebten Texteditors Sublime, denn Zurb hat nun einen [Github](https://github.com/zurb/foundation-5-sublime-snippets) voller Foundation HTML Snippets veröffentlicht, die man mit Sublime benutzen kann.
-Webseiten Prototypisieren wird damit, mit den Worten von Zurb, "Crazy Fast".
+Das Prototypen von Webseiten wird damit, mit den Worten von Zurb, "Crazy Fast".
 Wir Webhippies haben die Sache noch etwas aufgepeppt und einen Fork der [Snippets in HAML](https://github.com/webhippie/foundation-5-sublime-snippets/tree/haml-snippets/Snippets/Sublime%20Snippets/haml) angelegt. Damit sollte das Entwickeln nun mindestens "Insanely Fast" sein.
 
 Kommandozeilen Interface
@@ -75,7 +75,7 @@ Für Foundation 5 wurde ein neues CLI gebaut das man sich einfach als Ruby-Gem i
     [sudo] npm install -g bower
     gem install foundation
 
-Danach kann man einfach neue Projekte auf der Kommandozeile anlegen, z.B. standardmässig mit Compass:
+Danach kann man einfach neue Projekte auf der Kommandozeile anlegen, z.B. standardmäßig mit Compass:
 
     foundation new PROJEKT_NAME
 
