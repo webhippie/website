@@ -10,7 +10,7 @@ excerpt: Für alle Webentwickler weltweit hat sich kürzlich etwas großartiges 
 Etwas wunderbares ist Passiert
 ==============================
 
-Für alle Webentwickler weltweit hat sich kürzlich etwas großartiges ereignet. Die [5te Version des Foundation CSS Frameworks](http://foundation.zurb.com) wurde Released, und sie bringt uns viele aufregende neue Features. Nicht nur am Foundation Framework selbst sondern auch am Angebot von Zurb und dem Umfeld von Foundation selbst.
+Für alle Webentwickler weltweit hat sich kürzlich etwas großartiges ereignet. Die [5te Version des Foundation CSS Frameworks](http://foundation.zurb.com) wurde Released und sie bringt uns viele aufregende neue Features. Nicht nur am Foundation Framework sondern auch am Angebot von Zurb und dem Umfeld von Foundation selbst.
 
 Hier eine Zusammenfassung der spannendsten Neuerungen:
 
@@ -18,7 +18,7 @@ Hier eine Zusammenfassung der spannendsten Neuerungen:
 Minimalistisches Design
 -----------------------
 
-Alle mitgelieferten GUI Elemente in Foundation 5 sind in einem neuen minimalistischen Flat-Design gehalten, und liegen somit voll im momentanen Design Trend.
+Alle mitgelieferten GUI Elemente in Foundation 5 sind in einem neuen minimalistischen Flat-Design gehalten und liegen somit voll im momentanen Design Trend.
 
 <div style="text-align: center">
   <img src="{% asset_path blog/foundation_minimalistic.jpg %}" style="width: auto; padding-bottom: 20px;"/>
@@ -37,8 +37,8 @@ Community und Dokumentation
 ---------------------------
 
 Zurb hat für Foundation nun ein Forum eingerichtet auf dem man sich über sein Lieblings CSS-Framework austauschen kann.
-Das wird dazu führen das viele Code Beispiele zur Verfügung stehen, und man bei dringenden Problemen sofort Unterstützung finden kann.
-Erwähnenswert ist auch dass das Forum im bewährten StackExchange Stil gehalten ist.
+Das wird dazu führen, dass viele Code Beispiele zur Verfügung stehen, und man bei dringenden Problemen sofort Unterstützung finden kann.
+Erwähnenswert ist auch, dass das Forum im bewährten StackExchange Stil gehalten ist.
 
 Die Dokumentation wurde ebenfalls komplett neu aufgezogen und ist um einiges detailierter und einfacher verständlich, ausserdem werden auf der Foundation Webseite in Zukunft Video-Tutorials und Online-Kurse angeboten.
 Neulingen sollte es nun bedeutend einfacher fallen den Umgang mit Foundation zu lernen.
@@ -46,7 +46,7 @@ Neulingen sollte es nun bedeutend einfacher fallen den Umgang mit Foundation zu 
 Massives Interchange Upgrade
 ----------------------------
 
-Interchange ist ein Javascript Plugin für Foundation das seit Version 4 dafür sorgt das man auf verschiedenen Bildschirm Größen verschiedene Bilder laden kann.
+Interchange ist ein Javascript Plugin für Foundation, das seit Version 4 dafür sorgt das man auf verschiedenen Bildschirm Größen verschiedene Bilder laden kann.
 Auf einem kleinen Bildschirm kann Beispielsweise ein Bild in einer geringeren Auflösung geladen werden als auf einem Grossen. Die Betonung liegt hierbei auf "laden", denn die Inhalte werden nicht nur versteckt oder eingeblendet, wie bei den "hide-for-" und "show-for-" CSS Klassen, sondern sie werden tatsächlich nicht geladen wenn sie nicht benötigt werden und zehren deshalb auch nicht an der Ladegeschwindigkeit der Seite.
 
 Mit Foundation 5 hat Interchange nochmal deutlich an Power gewonnen, denn nun können nicht nur Bilder je nach Bildschirmgrösse ausgetauscht werden sondern jeder beliebige Inhalt.
@@ -64,7 +64,7 @@ Sublime Snippets
 ----------------
 
 Ebenfalls spannend wird es für Benutzer des beliebten Texteditors Sublime, denn Zurb hat nun einen [Github](https://github.com/zurb/foundation-5-sublime-snippets) voller Foundation HTML Snippets veröffentlicht, die man mit Sublime benutzen kann.
-Webseiten Prototypisieren wird damit, mit den Worten von Zurb "Crazy Fast".
+Webseiten Prototypisieren wird damit, mit den Worten von Zurb, "Crazy Fast".
 Wir Webhippies haben die Sache noch etwas aufgepeppt und einen Fork der [Snippets in HAML](https://github.com/webhippie/foundation-5-sublime-snippets/tree/haml-snippets/Snippets/Sublime%20Snippets/haml) angelegt. Damit sollte das Entwickeln nun mindestens "Insanely Fast" sein.
 
 Kommandozeilen Interface
