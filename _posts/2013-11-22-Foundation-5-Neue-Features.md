@@ -7,10 +7,10 @@ tags: [foundation, website, webdev, css, foundation 5, CLI]
 excerpt: Für alle Webentwickler weltweit hat sich kürzlich etwas großartiges ereignet. Die 5te Version des Foundation CSS Frameworks wurde Released, und sie bringt uns viele aufregende neue Features. Nicht nur am Foundation Framework selbst sondern auch am Angebot von Zurb und dem Umfeld von Foundation selbst. Hier eine Zusammenfassung der Neuerungen die ich am spannendsten finde.
 ---
 
-Etwas wunderbares ist Passiert
+Etwas Wunderbares ist passiert
 ==============================
 
-Für alle Webentwickler weltweit hat sich kürzlich etwas großartiges ereignet. Die [5te Version des Foundation CSS Frameworks](http://foundation.zurb.com) wurde Released und sie bringt uns viele aufregende neue Features. Nicht nur am Foundation Framework sondern auch am Angebot von Zurb und dem Umfeld von Foundation selbst.
+Für alle Webentwickler weltweit hat sich kürzlich etwas Großartiges ereignet. Die [5te Version des Foundation CSS Frameworks](http://foundation.zurb.com) wurde Released und sie bringt uns viele aufregende neue Features. Nicht nur am Foundation Framework sondern auch am Angebot von Zurb und dem Umfeld von Foundation selbst.
 
 Hier eine Zusammenfassung der spannendsten Neuerungen:
 
