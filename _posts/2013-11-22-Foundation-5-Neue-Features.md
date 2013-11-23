@@ -36,7 +36,7 @@ Der Medium Viewport wird nun vollständig unterstützt, sowohl auf der SCSS Seit
 Community und Dokumentation
 ---------------------------
 
-Zurb hat für Foundation nun ein Forum eingerichtet auf dem man sich über sein Lieblings CSS-Framework austauschen kann.
+Zurb hat für Foundation nun ein [Forum](http://foundation.zurb.com/forum) eingerichtet auf dem man sich über sein Lieblings CSS-Framework austauschen kann.
 Das wird dazu führen, dass viele Code Beispiele zur Verfügung stehen, und man bei dringenden Problemen sofort Unterstützung finden kann.
 Erwähnenswert ist auch, dass das Forum im bewährten StackExchange Stil gehalten ist.
 
@@ -88,4 +88,4 @@ Zusammenfassung
 
 Version 5 des Foundation CSS Frameworks ist leichter zu lernen, schneller zu benutzen, und sieht einfach super aus. Bereits nach diesem kleinen Überblick wird deutlich wieviel Dampf Foundation 5 unter der Haube hat.
 
-Ich wünsche viel Spaß beim Coden, wir sehen uns im Foundation Forum.
+Ich wünsche viel Spaß beim Coden, wir sehen uns im [Foundation Forum](http://foundation.zurb.com/forum).
