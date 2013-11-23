@@ -40,7 +40,7 @@ Zurb hat für Foundation nun ein Forum eingerichtet auf dem man sich über sein 
 Das wird dazu führen, dass viele Code Beispiele zur Verfügung stehen, und man bei dringenden Problemen sofort Unterstützung finden kann.
 Erwähnenswert ist auch, dass das Forum im bewährten StackExchange Stil gehalten ist.
 
-Die Dokumentation wurde ebenfalls komplett neu aufgezogen und ist um einiges detailierter und einfacher verständlich, ausserdem werden auf der Foundation Webseite in Zukunft Video-Tutorials und Online-Kurse angeboten.
+Die Dokumentation wurde ebenfalls komplett neu aufgezogen und ist um einiges detailierter und einfacher verständlich geworden, ausserdem werden auf der Foundation Webseite in Zukunft Video-Tutorials und Online-Kurse angeboten.
 Neulingen sollte es nun bedeutend einfacher fallen den Umgang mit Foundation zu lernen.
 
 Massives Interchange Upgrade
