@@ -13,6 +13,7 @@ $link_color: $page_compliment;
 :: Page: Home
 :: Page: Impressum
 :: Page: Blog
+:: Page: References
 */
 
 
@@ -142,7 +143,9 @@ code
 
 .spaceBottom { margin-bottom: 40px !important; }
 .spaceTop {	margin-top: 40px !important; }
+.spaceTopHalf {	margin-top: 20px !important; }
 .spaceBoth { margin-top: 40px !important; margin-bottom: 40px !important; }
+.spaceBothHalf { margin-top: 20px !important; margin-bottom: 20px !important; }
 
 /* Header */
 
@@ -542,5 +545,81 @@ code
 	margin-top: 25px;
 }
 
+/* -----------------------------------------
+   Page: References
+--------------------------------------------*/
 
+.references .row .small-12.columns h1
+{
+	@include inderfont(60px,$page_color);
+	padding-top: 37px;
+	font-weight: normal;
+}
+
+.row.ref-container
+{
+	margin-top: 20px;
+	&:last-child
+	{
+		margin-bottom: 20px;
+	}
+
+	.ref-inner
+	{
+		background-color: $page_color;
+		
+		padding: 20px;
+
+		h2
+		{
+			@include inderfont(24px,$page_compliment);
+			line-height: 1em;
+
+			margin-top: 0;
+		}
+
+		img
+		{
+			margin-bottom: 20px;
+		}
+		
+		p
+		{
+			@include inderfont(15px,$page_background);
+			line-height: 24px;
+		}
+
+		ul
+		{
+			list-style-position: inside;
+		}
+
+		li
+		{
+			@include inderfont(16px,$page_background);
+		}
+
+		a:hover
+		{
+			color: $page_background;
+		}
+	}
+}
+
+@media #{$small} 
+{ 
+	.row.ref-container .ref-inner img
+	{
+		margin-bottom: 0;
+	}
+}
+
+.ref-btn
+{
+  @include button($button-med, $page_color, false, false, false, false);
+  @include inderfont(16px,$page_compliment);
+  font-weight: normal;
+  box-shadow: none;
+  text-transform: uppercase;
+}
 
