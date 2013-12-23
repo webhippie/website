@@ -10,9 +10,7 @@ link: blog
 				<div class="desc">
 					Wir, die Webhippies, sind eine junge agile Web-Entwickler Truppe, die gemeinsam die größten (natürlich aber auch kleinere) Projekte stemmt.
 				</div>
-				<div class="text-center">
-					<a href="references.html" class="ref-btn">Unser Portfolio</a>
-				</div>					
+				{% include menu.html %}				
 				<hr noshade/>					
 				<div class="row">
 					<div class="small-12 columns smallBullets">					
@@ -46,92 +44,6 @@ link: blog
 				</div>
 				<hr noshade/>
 			</div>
-		</div>
-	</div>
-	 
-	<div class="row">
-		<div class="large-12 columns boxHeightContainer">
-			<ul class="small-block-grid-2 large-block-grid-3 members">
-
-				<li class="memberBox">
-					<div class="panel boxHeightColumn">
-						<h2>Felix Böhm</h2>
-						<img src="{% asset_path felix.jpg %}" 
-							 data-baseurl="{% asset_path felix.jpg %}" 
-							 data-profileurl="{% asset_path felix_profile.jpg %}"/>
-						<div>
-							<h3>Backend Entwicklung</h3>
-							{% include felix.html %}
-						</div>
-					</div>			
-				</li>
-
-				<li class="memberBox">
-					<div class="panel boxHeightColumn">
-						<div><h2>Sebastian Elpelt</h2></div>
-						<img src="{% asset_path sebastian.jpg %}" 
-							 data-baseurl="{% asset_path sebastian.jpg %}" 
-							 data-profileurl="{% asset_path sebastian_profile.jpg %}"/>
-						<div>
-							<h3>Grafik Design</h3>
-							{% include sebastian.html %}
-						</div>
-					</div>			
-				</li>
-
-				<li class="memberBox">
-					<div class="panel boxHeightColumn">
-						<h2>Thomas Börger</h2>
-						<img src="{% asset_path thomas.jpg %}" 
-							 data-baseurl="{% asset_path thomas.jpg %}" 
-							 data-profileurl="{% asset_path thomas_profile.jpg %}"/>
-						<div>
-							<h3>Backend Entwicklung</h3>
-							{% include thomas.html %}
-						</div>
-					</div>			
-				</li>
-
-				<li class="memberBox">
-					<div class="panel boxHeightColumn">
-						<h2>Franka Wittek</h2>
-						<img src="{% asset_path franka.jpg %}" 
-							 data-baseurl="{% asset_path franka.jpg %}" 
-							 data-profileurl="{% asset_path franka_profile.jpg %}"/>
-						<div>	
-							<h3>Frontend Entwicklung</h3>
-							{% include franka.html %}
-						</div>	
-					</div>			
-				</li>	
-
-				<li class="memberBox">
-					<div class="panel boxHeightColumn">
-						<h2>Danyel Bayraktar</h2>
-						<img src="{% asset_path danyel.jpg %}" 
-							 data-baseurl="{% asset_path danyel.jpg %}" 
-							 data-profileurl="{% asset_path danyel_profile.jpg %}"/>
-						<div>
-							<h3>Backend Entwicklung</h3>
-							{% include danyel.html %}
-						</div>
-					</div>			
-				</li>	
-
-				<li class="memberBox">
-					<div class="panel boxHeightColumn">
-						<h2>Armin Bo&szlig;</h2>
-						<img src="{% asset_path armin.jpg %}" 
-							 data-baseurl="{% asset_path armin.jpg %}" 
-							 data-profileurl="{% asset_path armin_profile.jpg %}"/>
-						<div>				
-							<h3>Frontend Entwicklung</h3>
-							{% include armin.html %}
-						</div>			
-					</div>			
-				</li>
-
-			</ul>
 		</div>
 	</div>
 

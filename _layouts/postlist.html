@@ -7,7 +7,8 @@
 		<title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
 
 		<meta name="description" content="{{site.description}}" />
-		<meta name="author" content="{{site.author}}" />    
+		<meta name="author" content="{{site.author}}" />
+		<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">        
 
 		{% stylesheet app %}
 
@@ -32,6 +33,18 @@
 		<!--div class="whSmallBlogButton show-for-small">
 			<a href="#">BLOG</a>
 		</div-->
+
+		<div class="row">
+			<div class="row spaceTop">
+				<div class="small-11 small-centered large-9 large-centered columns">
+					<div class="text-right">
+						<div class="row">
+							<a class="ref-btn" href="{{ site.url }}/feed.xml">RSS</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div class="row spaceBottom">
 				{{ content }}

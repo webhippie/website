@@ -1,7 +1,17 @@
-<p>
-	Teamarbeit und Firmenprozesse einfacher gestalten mit Rails. Herausforderungen lösen mit und in der  Community und viel Herzblut beim <a href="http://www.cwnue.de/" target="_blank">Coworking</a>.
-	Workshops am Liebsten aus dem Stegreif am <a href="http://www.bcnue.de/" target="_blank">Barcamp</a>.
-	Meine Lieblings Usergroups:
-	<a href="http://www.coworking-nuernberg.de/veranstaltungen/usergroups/229-agile-monday" target="_blank">Agile Monday</a>,
-	<a href="http://www.coworking-nuernberg.de/veranstaltungen/usergroups/233-joomla-user-group" target="_blank">Joomla UGN</a>
-</p>
+        {% capture name %}
+          Felix Böhm
+        {% endcapture %}
+
+        {% capture role %}
+          Backend Entwicklung
+        {% endcapture %}
+
+        {% capture description %}
+          Teamarbeit und Firmenprozesse einfacher gestalten mit Rails. Herausforderungen lösen mit und in der  Community und viel Herzblut beim <a href="http://www.cwnue.de/" target="_blank">Coworking</a>.
+          Workshops am Liebsten aus dem Stegreif am <a href="http://www.bcnue.de/" target="_blank">Barcamp</a>.
+          Meine Lieblings Usergroups:
+          <a href="http://www.coworking-nuernberg.de/veranstaltungen/usergroups/229-agile-monday" target="_blank">Agile Monday</a>,
+          <a href="http://www.coworking-nuernberg.de/veranstaltungen/usergroups/233-joomla-user-group" target="_blank">Joomla UGN</a>
+        {% endcapture %}
+
+        {% include _member.html role=role name=name base_image="felix.jpg" profile_image="felix_profile.jpg" description=description %}

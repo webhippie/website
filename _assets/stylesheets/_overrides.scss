@@ -14,6 +14,7 @@ $link_color: $page_compliment;
 :: Page: Impressum
 :: Page: Blog
 :: Page: References
+:: Page: Team
 */
 
 
@@ -623,3 +624,13 @@ code
   text-transform: uppercase;
 }
 
+/* -----------------------------------------
+   Page: Team
+--------------------------------------------*/
+
+.team.row .small-12.columns h1
+{
+	@include inderfont(60px,$page_color);
+	padding-top: 37px;
+	font-weight: normal;
+}

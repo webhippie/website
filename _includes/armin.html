@@ -1,5 +1,15 @@
-<p>
-	Web Frontend-Entwicklung Up-To-Date: Javascript, CSS3, Sass, HTML5. 
-	Immer daran Interessiert neue Dinge auszuprobieren. 
-	Mich fasziniert die Idee einer starken Gruppe, deren Mitglieder einzigartige Fähigkeiten haben und sich nahtlos ergänzen. 
-</p>
+        {% capture name %}
+          Armin Boß
+        {% endcapture %}
+
+        {% capture role %}
+          Frontend Entwicklung
+        {% endcapture %}
+
+        {% capture description %}
+          Web Frontend-Entwicklung Up-To-Date: Javascript, CSS3, Sass, HTML5. 
+          Immer daran Interessiert neue Dinge auszuprobieren. 
+          Mich fasziniert die Idee einer starken Gruppe, deren Mitglieder einzigartige Fähigkeiten haben und sich nahtlos ergänzen. 
+        {% endcapture %}
+
+        {% include _member.html role=role name=name base_image="armin.jpg" profile_image="armin_profile.jpg" description=description %}

@@ -1,0 +1,14 @@
+        <li class="memberBox">
+          <div class="panel boxHeightColumn">
+            <h2>{{ include.name }}</h2>
+            <img src="{{ include.base_image | asset_path }}" 
+               data-baseurl="{{ include.base_image | asset_path }}" 
+               data-profileurl="{{ include.profile_image | asset_path }}"/>
+            <div>
+              <h3>{{ include.role }}</h3>
+              <p>
+                {{ include.description }}
+              </p>
+            </div>
+          </div>      
+        </li>

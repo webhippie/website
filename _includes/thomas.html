@@ -1,8 +1,18 @@
-<p>
-	Alter Web-Weiser mit jahrelanger Projekterfahrung. Klar hat man einen Favoriten: Rails Fanboy, Rails macht glücklich!<br/><br/>
+        {% capture name %}
+          Thomas Börger
+        {% endcapture %}
 
-	Eigener Minecraft Server ist Ehrensache.<br/><br/>
+        {% capture role %}
+          Backend Entwickler
+        {% endcapture %}
 
-	Meine lieblings Usergroup:
-	 <a href="http://www.coworking-nuernberg.de/veranstaltungen/usergroups/236-rails-ugn" target="_blank">Ruby UGN</a> 
-</p>
+        {% capture description %}
+          Alter Web-Weiser mit jahrelanger Projekterfahrung. Klar hat man einen Favoriten: Rails Fanboy, Rails macht glücklich!<br/><br/>
+
+          Eigener Minecraft Server ist Ehrensache.<br/><br/>
+
+          Meine lieblings Usergroup:
+           <a href="http://www.coworking-nuernberg.de/veranstaltungen/usergroups/236-rails-ugn" target="_blank">Ruby UGN</a> 
+        {% endcapture %}
+
+        {% include _member.html role=role name=name base_image="thomas.jpg" profile_image="thomas_profile.jpg" description=description %}
