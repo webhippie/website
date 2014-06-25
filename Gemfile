@@ -1,3 +1,7 @@
 source 'https://rubygems.org'
-gem 'github-pages'
-gem 'jekyll-haml'
+
+group :development do
+  gem 'rake'
+  gem 'github-pages'
+  gem 'jekyll-haml'
+end
