@@ -1,41 +1,42 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+<!doctype html>
+<html class="no-js">
   <head>
-  	<meta charset="utf-8" />
-  	<meta name="viewport" content="width=device-width" />
-    
-  	<title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+    <title>{{ page.title }} - {{ site.name }}</title>
 
-    <meta name="description" content="{{site.description}}" />
-    <meta name="author" content="{{site.author}}" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ page.title }} - {{ site.name }}" />
+    <meta name="keywords" content="{{ page.keywords }}, {{ site.keywords }}" />
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:site_name" content=" - {{ site.name }}"/>
+    <meta property="og:url" content=" - {{ site.url }}"/>
+    <meta property="og:description" content="{{ page.description }}"/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+  
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.url }}/css/app.css" />
+    <link rel="stylesheet" href="{{ site.url }}/css/pygments.css" />
+    <link rel="shortcut icon" href="favicon.ico">
 
-  	{% stylesheet app %}
-
-	<script type="text/javascript">
-
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-42786921-1']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-	</script>
-
+    <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
-  {% include header.html %}
+    {% include header.html %}
 
-	{{ content }}
+    {{ content }}
 
-	{% include footer.html %}
+    {% include footer.html %}
 
-	{% javascript app %}
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ site.url }}/bower_components/jquery/jquery.js"><\/script>')</script>
+    <script src="{{ site.url }}/js/plugins.js"></script>
+    <script src="{{ site.url }}/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="{{ site.url }}/js/jquery.fittext.js"></script>
+    <script src="{{ site.url }}/js/app.js"></script>
   </body>
 </html>

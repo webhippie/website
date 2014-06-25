@@ -1,0 +1,366 @@
+/*
+
+  Contents
+
+  - Header
+  - Footer
+  - Blog
+  - Frontpage Sections
+    :: Team
+    :: References
+    :: Blog
+    :: Contact
+  - Various
+
+*/
+
+////////////////////////////////////
+// Header
+////////////////////////////////////
+
+header
+{
+  background-color: $primary-color;
+
+  padding: $column-gutter*2 0;
+
+  .row .columns:first-child
+  {
+    margin-bottom: $column-gutter/2;
+  }
+
+  .title
+  {
+    font-size: $font-size-giant;
+    text-align: center;
+    line-height: 70px;
+
+    margin-bottom: $column-gutter;
+  }
+
+  .subtitle
+  {
+    font-size: $font-size-large;
+    text-align: center;
+  }
+}
+
+
+////////////////////////////////////
+// Footer
+////////////////////////////////////
+
+footer
+{
+  font-size: $font-size-medium;
+  @include link-color(lighten($primary-color,25%));
+  color: $primary-color;
+  
+  background-color: $body-font-color;
+
+  padding: $column-gutter*2 0;
+
+  span
+  {
+    display: inline !important;
+  }
+}
+
+////////////////////////////////////
+// Blog
+////////////////////////////////////
+
+.columns:last-child .blog-post
+{
+  border-bottom: none;
+  margin-bottom: $column-gutter*2;
+}
+
+.blog-post
+{
+  color: $body-font-color;
+  font-size: $font-size-medium;
+
+  background-color: $quinary-color;
+  border-bottom: 1px solid $body-font-color;
+
+  padding: $column-gutter;
+  overflow: hidden;
+
+  h1
+  {
+    font-size: $font-size-large;
+    color: $body-font-color;
+  }
+
+  .post-info
+  {
+    font-style: italic;
+  }
+
+  .tags-label
+  {
+    display: block;
+    float: left;
+    margin-right: $column-gutter/2;
+  }
+
+  .tags-list
+  {
+    display: block;
+    float: left;
+    width: calc(100% - 60px);
+  }
+
+  @include link-color($quaternary-color);
+}
+
+////////////////////////////////////
+// Frontpage Sections
+////////////////////////////////////
+
+.section-title
+{
+  font-size: $font-size-large;
+  font-weight: bold;
+  color: $body-font-color;
+  text-align: center;
+
+  margin-bottom: $column-gutter*2;
+
+  span
+  {
+    font-size: $font-size-giant;
+    display: none;
+  }
+}
+
+.section-title-number-mobile
+{
+  font-size: $font-size-giant;
+  text-align: center;
+  line-height: 88px;
+
+  background-color: $body-font-color;
+  border-radius: 50% 50%;
+
+  margin: $column-gutter auto;
+  width: 100px;
+  height: 100px;
+}
+
+@media #{$large-up} { 
+  .section-title
+  {
+    text-align: left;
+
+    margin-bottom: $column-gutter*2;
+
+    span {
+      display: inline;
+    }
+  }
+}
+
+
+/* Team */
+
+section.team
+{
+  background-color: $secondary-color;
+  
+  padding: $column-gutter 0;
+  position: relative;
+
+  .section-title-number-mobile
+  {
+    color: $secondary-color;
+  }
+
+  li
+  {
+    img
+    {
+      border-style: hidden;
+      border-color: $body-font-color;
+      border-width: $column-gutter/4 $column-gutter/4 0 $column-gutter/4;
+    
+      width: 100%;
+    }
+
+    .foto-name
+    {
+      color: $primary-color;
+      background-color: $body-font-color;
+      padding: $column-gutter/4;
+    }
+  }
+}
+
+/* References */
+
+section.references
+{
+  padding: $column-gutter 0;
+  background-color: $tertiary-color;
+
+  .section-title-number-mobile
+  {
+    color: $tertiary-color;
+  }
+}
+
+/* Blog */
+
+section.blog
+{
+  padding: $column-gutter 0 $column-gutter*2 0;
+  background-color: $quaternary-color;
+  @include link-color(lighten($quaternary-color,50%));
+
+  .section-title-number-mobile
+  {
+    color: $quaternary-color;
+    line-height: 80px;
+  }
+
+  ul
+  {
+    text-align: center;
+    li
+    {
+      font-size: $font-size-medium;
+      margin-bottom: $column-gutter/2;
+      list-style-type: none;
+    }
+  }
+
+  .date
+  {
+    //font-size: $font-size-medium;
+    opacity: 0.5;
+  }
+}
+
+@media #{$large-up} { 
+  section.blog .row.collapse
+  {
+    ul{
+      text-align: left;
+      li
+      {
+        margin-bottom: 0;
+      }
+    }
+    
+    .columns:first-child
+    {
+      padding: 0 $column-gutter/2;
+    }
+    .columns:last-child
+    {
+      border-right: 3px solid $body-font-color;
+    }
+  }
+}
+
+/* Contact */
+
+section.contact
+{
+  padding: $column-gutter 0;
+  background-color: $quinary-color;
+
+  font-size: $font-size-large;
+
+  .section-title-number-mobile
+  {
+    color: $quinary-color;
+  }
+
+  .section-title
+  {
+    margin-bottom: $column-gutter;
+  }
+
+  .row.collapse .columns:first-child
+  {
+    padding: $column-gutter*2 0;
+  }
+}
+
+@media #{$large-up}
+{
+  section.contact .row.collapse
+  {
+    .columns:first-child
+    {
+      padding: $column-gutter/2 0 $column-gutter 0;
+    }
+    .columns:last-child
+    {
+      border-left: 3px solid $body-font-color;
+    }
+  }
+}
+
+////////////////////////////////////
+// Various
+////////////////////////////////////
+
+.demonstrative-icon
+{
+  font-size: $font-size-giant*2;
+  color: $body-font-color;
+}
+
+.cta-link
+{
+  font-size: $font-size-large;
+  font-weight: bold;
+}
+
+svg
+{
+  width: 215px;
+  height: auto;
+
+  path
+  {
+    fill: $body-font-color;
+  }
+}
+
+.site-title
+{
+  font-size: $font-size-giant;
+  text-align: center;
+}
+
+.spaced-top {
+  margin-top: $column-gutter;
+}
+
+.spaced-bottom {
+  margin-bottom: $column-gutter;
+}
+
+code
+{
+    background-color: #030303;
+    border: 1px solid #1A1A1A;
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding: 2px;
+    white-space: pre;
+    width: 100%;
+}
+code .lineno {
+    background-color: #050505;
+    padding: 0 10px;
+}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Neue Features in Foundation 5
-author: Armin Boß
+author: Armin
 categories: [foundation 5, foundation, features, css]
 tags: [foundation, website, webdev, css, foundation 5, CLI]
 excerpt: Für alle Webentwickler weltweit hat sich kürzlich etwas großartiges ereignet. Die 5te Version des Foundation CSS Frameworks wurde Released, und sie bringt uns viele aufregende neue Features. Nicht nur am Foundation Framework selbst sondern auch am Angebot von Zurb und dem Umfeld von Foundation selbst. Hier eine Zusammenfassung der Neuerungen die ich am spannendsten finde.
@@ -21,7 +21,7 @@ Minimalistisches Design
 Alle mitgelieferten GUI Elemente in Foundation 5 sind in einem neuen minimalistischen Flat-Design gehalten und liegen somit voll im momentanen Design Trend.
 
 <div style="text-align: center">
-  <img src="{% asset_path blog/foundation_minimalistic.jpg %}" style="width: auto; padding-bottom: 20px;"/>
+  <img src="{{ site.url }}/assets/img/foundation_minimalistic.jpg" style="width: auto; padding-bottom: 20px;"/>
 </div>
  
 Das neue Design erleichtert uns Webentwicklern das Leben mit Designern und Kunden enorm, da zurzeit viele Webseiten in einem schlicht gehaltenem Stil gewünscht werden.

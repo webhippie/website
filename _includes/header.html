@@ -1,38 +1,15 @@
-    <div class="headerBar">
-      <div class="row">
-        <div class="small-12 large-9 columns">
-          <div id="titleText"><a href="/">.Webhippie United.</a></div>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="small-12 large-9 columns">
-          <h3 id="subtitleText">FREE&emsp;|&emsp;INDYPENDENT&emsp;|&emsp;INNOVATIV&emsp;|&emsp;SUPERCOOL</h3>
-        </div>
-      </div>
-
-      {% case page.link %}
-        {% when 'home' %}
-           <a href="/" class="hide-for-small whBlogButton right">HOME</a>
-        {% when 'blog' %}
-           <a href="/blog.html" class="hide-for-small whBlogButton right">BLOG</a>
-        {% else %}
-           <a href="/blog.html" class="hide-for-small whBlogButton right">BACK</a>
-      {% endcase %}
-
-    <img id="wimpel" class="hide-for-small" src="{% asset_path wimpel.png %}"/>
+<header>
+  <div class="row">
+    <div class="small-12 columns text-center">
+    {% include hipone.svg %}
     </div>
-
-    <div class="whSmallBlogButton show-for-small">
-      
-      {% case page.link %}
-        {% when 'home' %}
-           <a href="/">HOME</a>
-        {% when 'blog' %}
-           <a href="/blog.html">BLOG</a>
-        {% else %}
-           <a href="/blog.html">BACK</a>
-      {% endcase %}
-
+    <div class="small-12 columns">
+      <div class="title">
+        {{ site.name }}
+      </div>
+      <div class="subtitle">
+        {{ site.description }}
+      </div>
     </div>
-
+  </div>
+</header>

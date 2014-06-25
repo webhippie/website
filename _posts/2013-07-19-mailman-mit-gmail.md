@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mailman mit GMail
-author: Danyel Bayraktar
+author: Danyel
 categories: [mailman, gmail]
 tags: [mailman, gmail, ruby, gems, imap]
 ---

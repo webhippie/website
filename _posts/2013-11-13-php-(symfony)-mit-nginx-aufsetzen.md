@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP (Symfony) mit nginx/FastCGI aufsetzen.
-author: Danyel Bayraktar
+author: Danyel
 categories: []
 tags: [nginx, php, symfony, fastcgi, fpm, php-fpm]
 ---

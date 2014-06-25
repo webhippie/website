@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wordpress Child-Themes
-author: Armin Boß
+author: Armin
 categories: [wordpress, webdev]
 tags: [wordpress, themes, webdev, blogging]
 ---

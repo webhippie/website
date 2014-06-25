@@ -1,21 +1,10 @@
-name: Webhippie
-description: Software Entwicklung und Consulting
-
+name : Webhippie United
+brand : Webhippie
+description : Software- und Web-Entwicklung
+keyword:  
+url : http://0.0.0.0:4000
+email : mail@webhippie.com
 author: Webhippie Team
-author_email: mail@webhippie.de
-
-url: http://webhippie.de
-permalink: /blog/:title
-
-assets:
-  cache_assets: true
-  compress:
-    css: sass
-    js:  uglifier
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - Rakefile
-
+markdown: kramdown
 pygments: true
+permalink: /:title

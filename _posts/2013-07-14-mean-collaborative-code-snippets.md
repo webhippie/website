@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MEAN Collaborative Code Snippets
-author: Felix Böhm
+author: Felix
 categories: [greatest]
 tags: [code snippets, latest & greatest, node.js, angular, express, webentwicklung]
 excerpt: Weekend Challange, Snippet Tool mit MEAN Stack

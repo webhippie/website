@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bloggen mit Jekyll
-author: Armin Boß
+author: Armin
 categories: [jekyll, markdown]
 tags: [jekyll, website, startup, markdown, blogging, blog, example]
 excerpt: Ich möchte hier anhand einer kleinen Anleitung kurz demonstrieren wie sehr es *flowt* mit Jekyll Blogposts zu schreiben.

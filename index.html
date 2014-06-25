@@ -1,95 +1,38 @@
 ---
 layout: default
-title: Home
-link: blog 
+title: Welcome!
+description: This is my site. Welcome.
+keywords: github pages, Jekyll, foundation 5
 ---
 
-	<div class="row">
-		<div class="large-12 columns">
-			<div class="featured">
-				<div class="desc">
-					Wir, die Webhippies, sind eine junge agile Web-Entwickler Truppe, die gemeinsam die größten (natürlich aber auch kleinere) Projekte stemmt.
-				</div>
-				{% include menu.html %}				
-				<hr noshade/>					
-				<div class="row">
-					<div class="small-12 columns smallBullets">					
-						<div class="small-6 columns">
-							<ul>
-								<li>
-									Ruby on Rails, Sinatra, PHP, Symfony
-								</li>
-								<li>
-									Haml, Slim, Sass, Foundation, Bootstrap, ...
-								</li>
-								<li>
-									CMS Entwicklung: Joomla, Wordpress, Refinery, Typo3
-								</li>
-							</ul>
-						</div>
-						<div class="small-6 columns">
-							<ul>
-								<li>
-									Wir sprechen gerne mit Social Media APIs.
-								</li>
-								<li>
-									Mobile? Immer!
-								</li>
-								<li>
-									Design: Web, App, Print, Logo, Firmenauftritt			
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<hr noshade/>
-			</div>
-		</div>
-	</div>
+<section class="team">
+  <div class="row">
+    <div class="small-12 columns">
+      {% include section_team.html %}
+    </div>
+  </div>
+</section>
 
-	<div class="colorBlock">
-		<div class="row">
-			<div class="large-12 columns">
-				<div class="featured">
-					<div class="descSmall">
-						<p>Austausch, Netzwerk, Community! – Wir und die Nürnberger Webszene: Ruby / Rails Usergroup, Joomla Usergroup, PHP Usergroup, Agile Monday, Softwerkskammer, <a href="http://www.nueww.de/">Nürnberger Web Week</a></p>						
-						<p>Wir und unsere Partner: </p>
-					</div>
-					<div class="row">
-						<div class="small-12 columns smallBullets">					
-							<div class="small-6 columns">
-								<ul>
-									<li>
-										<a href="http://www.tec-promotion.de/" target="_blank">tec-promotion GmbH</a>
-										</br>
-										Tags: Joomla, Joomla Day Deutschland
-									</li>
-									<li>
-										<a href="http://www.usercenteredstrategy.de" target="_blank">User Centered Strategy</a>
-										</br>
-										Tags: Facebook Marketing, Webweek
-									</li>
-								</ul>
-							</div>
-							<div class="small-6 columns">
-								<ul>
-									<li>
-										<a href="http://www.wuenschedesign.de/" target="_blank">wünschedesign</a>
-										</br>
-										Tags: Hammer Design, Grafik
-									</li>
-									<li>
-										<a href="http://www.adojo.de" target="_blank">Agentur für Suchmaschinenmarketing</a>
-										</br>
-										Tags: Adwords, Online Marketing
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<section class="references">
+  <div class="row">
+    <div class="small-12 columns">
+      {% include section_references.html %}
+    </div>
+  </div>
+</section>
 
+<section class="blog">
+  <div class="row">
+    <div class="small-12 columns">
+      {% include section_blog.html %}
+    </div>
+  </div>
+</section>
 
+<section class="contact">
+  <div class="row">
+    <div class="small-12 columns">
+      {% include section_contact.html %}
+    </div>
+  </div>
+</section>

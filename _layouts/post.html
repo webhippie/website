@@ -1,83 +1,70 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
+<!doctype html>
+<html class="no-js">
+  <head>
+    <title>{{ page.title }} - {{ site.name }}</title>
 
-		<title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ page.title }} - {{ site.name }}" />
+    <meta name="keywords" content="{{ page.keywords }}, {{ site.keywords }}" />
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:site_name" content=" - {{ site.name }}"/>
+    <meta property="og:url" content=" - {{ site.url }}"/>
+    <meta property="og:description" content="{{ page.description }}"/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+  
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.url }}/css/app.css" />
+    <link rel="stylesheet" href="{{ site.url }}/css/pygments.css" />
+    <link rel="shortcut icon" href="favicon.ico">
 
-		<meta name="description" content="{{site.description}}" />
-		<meta name="author" content="{{site.author}}" /> 
-		<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">       
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
 
-		{% stylesheet app %}
-		{% stylesheet pygments %}
+    {% include header.html %}
+    <div class="row">
+      <div class="small-12 spaced-top spaced-bottom columns">
+        <div class="site-title">
+          Blog
+        </div>
+      </div>
+    </div>
 
-		<script type="text/javascript">
+    <div class="row">
+      <div class="small-12 columns">
+        <div class="blog-post">
+          <h1>{{ page.title }}</h1>
+          <div class="post-info">
+            {{ page.date | date: "%d.%m.%Y" }} / {{ page.author }}
+          </div>
+          <div class="post-content spaced-top spaced-bottom">
+            {{ content }}
+          </div>      
+          <div class="post-tags">
+            <span class="tags-label">Tags:</span>
+            <div class="tags-list">
+              {% for tag in page.tags %}
+                <a href="/tag/{{ tag }}">{{ tag }}</a>&nbsp;/ 
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-42786921-1']);
-		  _gaq.push(['_trackPageview']);
+    {% include footer.html %}
 
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
 
-		</script>
-	</head>
-	<body>
-
-		{% include header.html %}
-
-		<!--div class="whSmallBlogButton show-for-small">
-			<a href="#">BLOG</a>
-		</div-->
-
-		<div class="row spaceBoth">
-			<div class="small-12 small-uncentered large-9 large-centered columns postPanel">
-				<div class="row upperBar">		
-					<div class="small-9 columns">
-						<div class="postAvatar hide-for-small">
-							<img src="{% asset_path the_hip_one.png %}"/>
-						</div>						
-						<div class="postTitle">
-							{{ page.title }}
-						</div>
-					</div>
-					<div class="small-3 columns">
-						<div class="postDate">
-							{{ page.date | date: "%d.%m.%Y" }}
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="small-12 columns">
-						<div class="blogContent">
-							{{ content }} 
-						</div>			
-					</div>
-				</div>
-				<div class="row lowerBar">
-					<div class="small-3 columns">
-						<div class="postInfo">
-							<span>{{ page.author }}</span>
-						</div>
-					</div>
-					<div class="small-9 columns">
-						<div class="postInfo">
-							Tags:
-							{% for tag in page.tags %}
-								<a href="/tag/{{ tag }}">{{ tag }}</a>
-							{% endfor %}
-						</div>	
-					</div>		
-				</div>	
-			</div>
-		</div>
-
-		{% include footer.html %}
-
-	</body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ site.url }}/bower_components/jquery/jquery.js"><\/script>')</script>
+    <script src="{{ site.url }}/js/plugins.js"></script>
+    <script src="{{ site.url }}/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="{{ site.url }}/js/jquery.fittext.js"></script>
+    <script src="{{ site.url }}/js/app.js"></script>
+  </body>
 </html>
