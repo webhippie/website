@@ -8,3 +8,7 @@ author: Webhippie Team
 markdown: kramdown
 pygments: true
 permalink: /:title
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
