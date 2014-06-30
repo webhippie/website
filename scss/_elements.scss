@@ -36,6 +36,11 @@ header
     line-height: 70px;
 
     margin-bottom: $column-gutter;
+
+    a, a:link, a:hover, a:focus, a:active
+    {
+      color: $body-font-color;
+    }
   }
 
   .subtitle
@@ -320,14 +325,41 @@ section.contact
   font-weight: bold;
 }
 
-svg
-{
-  width: 215px;
-  height: auto;
 
-  path
+$logo_size: 28%;
+
+.logo-container
+{
+  $enlargening_factor: 2.2;
+  width: $logo_size * $enlargening_factor;
+  height: 0;
+
+  margin: 0 auto $column-gutter auto;
+  padding-top: (101 / 93) * ($logo_size * $enlargening_factor);
+  position: relative;
+
+  svg
   {
-    fill: $body-font-color;
+    display: block;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+
+    path
+    {
+      fill: $body-font-color;
+    }
+  }
+}
+
+@media #{$medium-up}
+{
+  .logo-container
+  {
+    width: $logo_size;
+    padding-top: (101 / 93) * ($logo_size);
   }
 }
 

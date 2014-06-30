@@ -2,7 +2,7 @@ name : Webhippie United
 brand : Webhippie
 description : Software- und Web-Entwicklung
 keyword:  
-url : http://webhippie.de
+url : http://0.0.0.0:4000
 email : mail@webhippie.com
 author: Webhippie Team
 markdown: kramdown

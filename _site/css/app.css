@@ -8519,13 +8519,17 @@ header .title {
   line-height: 70px;
   margin-bottom: 1.875rem;
 }
-/* line 42, ../scss/_elements.scss */
+/* line 41, ../scss/_elements.scss */
+header .title a, header .title a:link, header .title a:hover, header .title a:focus, header .title a:active {
+  color: #222222;
+}
+/* line 47, ../scss/_elements.scss */
 header .subtitle {
   font-size: 2.1875rem;
   text-align: center;
 }
 
-/* line 54, ../scss/_elements.scss */
+/* line 59, ../scss/_elements.scss */
 footer {
   font-size: 1.25rem;
   color: #f29b1b;
@@ -8540,18 +8544,18 @@ footer a, footer a:link, footer a:focus, footer a:active {
 footer a:hover {
   color: #fce5c4;
 }
-/* line 64, ../scss/_elements.scss */
+/* line 69, ../scss/_elements.scss */
 footer span {
   display: inline !important;
 }
 
-/* line 74, ../scss/_elements.scss */
+/* line 79, ../scss/_elements.scss */
 .columns:last-child .blog-post {
   border-bottom: none;
   margin-bottom: 3.75rem;
 }
 
-/* line 80, ../scss/_elements.scss */
+/* line 85, ../scss/_elements.scss */
 .blog-post {
   color: #222222;
   font-size: 1.25rem;
@@ -8560,22 +8564,22 @@ footer span {
   padding: 1.875rem;
   overflow: hidden;
 }
-/* line 91, ../scss/_elements.scss */
+/* line 96, ../scss/_elements.scss */
 .blog-post h1 {
   font-size: 2.1875rem;
   color: #222222;
 }
-/* line 97, ../scss/_elements.scss */
+/* line 102, ../scss/_elements.scss */
 .blog-post .post-info {
   font-style: italic;
 }
-/* line 102, ../scss/_elements.scss */
+/* line 107, ../scss/_elements.scss */
 .blog-post .tags-label {
   display: block;
   float: left;
   margin-right: 0.9375rem;
 }
-/* line 109, ../scss/_elements.scss */
+/* line 114, ../scss/_elements.scss */
 .blog-post .tags-list {
   display: block;
   float: left;
@@ -8590,7 +8594,7 @@ footer span {
   color: #92794a;
 }
 
-/* line 123, ../scss/_elements.scss */
+/* line 128, ../scss/_elements.scss */
 .section-title {
   font-size: 2.1875rem;
   font-weight: bold;
@@ -8598,13 +8602,13 @@ footer span {
   text-align: center;
   margin-bottom: 3.75rem;
 }
-/* line 132, ../scss/_elements.scss */
+/* line 137, ../scss/_elements.scss */
 .section-title span {
   font-size: 6.25rem;
   display: none;
 }
 
-/* line 139, ../scss/_elements.scss */
+/* line 144, ../scss/_elements.scss */
 .section-title-number-mobile {
   font-size: 6.25rem;
   text-align: center;
@@ -8617,35 +8621,35 @@ footer span {
 }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 154, ../scss/_elements.scss */
+  /* line 159, ../scss/_elements.scss */
   .section-title {
     text-align: left;
     margin-bottom: 3.75rem;
   }
-  /* line 159, ../scss/_elements.scss */
+  /* line 164, ../scss/_elements.scss */
   .section-title span {
     display: inline;
   }
 }
 /* Team */
-/* line 169, ../scss/_elements.scss */
+/* line 174, ../scss/_elements.scss */
 section.team {
   background-color: #d17a09;
   padding: 1.875rem 0;
   position: relative;
 }
-/* line 176, ../scss/_elements.scss */
+/* line 181, ../scss/_elements.scss */
 section.team .section-title-number-mobile {
   color: #d17a09;
 }
-/* line 183, ../scss/_elements.scss */
+/* line 188, ../scss/_elements.scss */
 section.team li img {
   border-style: hidden;
   border-color: #222222;
   border-width: 0.46875rem 0.46875rem 0 0.46875rem;
   width: 100%;
 }
-/* line 192, ../scss/_elements.scss */
+/* line 197, ../scss/_elements.scss */
 section.team li .foto-name {
   color: #f29b1b;
   background-color: #222222;
@@ -8653,18 +8657,18 @@ section.team li .foto-name {
 }
 
 /* References */
-/* line 203, ../scss/_elements.scss */
+/* line 208, ../scss/_elements.scss */
 section.references {
   padding: 1.875rem 0;
   background-color: #8e7b57;
 }
-/* line 208, ../scss/_elements.scss */
+/* line 213, ../scss/_elements.scss */
 section.references .section-title-number-mobile {
   color: #8e7b57;
 }
 
 /* Blog */
-/* line 216, ../scss/_elements.scss */
+/* line 221, ../scss/_elements.scss */
 section.blog {
   padding: 1.875rem 0 3.75rem 0;
   background-color: #705d39;
@@ -8677,113 +8681,130 @@ section.blog a, section.blog a:link, section.blog a:focus, section.blog a:active
 section.blog a:hover {
   color: #f3efe8;
 }
-/* line 222, ../scss/_elements.scss */
+/* line 227, ../scss/_elements.scss */
 section.blog .section-title-number-mobile {
   color: #705d39;
   line-height: 80px;
 }
-/* line 228, ../scss/_elements.scss */
+/* line 233, ../scss/_elements.scss */
 section.blog ul {
   text-align: center;
 }
-/* line 231, ../scss/_elements.scss */
+/* line 236, ../scss/_elements.scss */
 section.blog ul li {
   font-size: 1.25rem;
   margin-bottom: 0.9375rem;
   list-style-type: none;
 }
-/* line 239, ../scss/_elements.scss */
+/* line 244, ../scss/_elements.scss */
 section.blog .date {
   opacity: 0.5;
 }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 248, ../scss/_elements.scss */
+  /* line 253, ../scss/_elements.scss */
   section.blog .row.collapse ul {
     text-align: left;
   }
-  /* line 251, ../scss/_elements.scss */
+  /* line 256, ../scss/_elements.scss */
   section.blog .row.collapse ul li {
     margin-bottom: 0;
   }
-  /* line 257, ../scss/_elements.scss */
+  /* line 262, ../scss/_elements.scss */
   section.blog .row.collapse .columns:first-child {
     padding: 0 0.9375rem;
   }
-  /* line 261, ../scss/_elements.scss */
+  /* line 266, ../scss/_elements.scss */
   section.blog .row.collapse .columns:last-child {
     border-right: 3px solid #222222;
   }
 }
 /* Contact */
-/* line 270, ../scss/_elements.scss */
+/* line 275, ../scss/_elements.scss */
 section.contact {
   padding: 1.875rem 0;
   background-color: #ffdc8a;
   font-size: 2.1875rem;
 }
-/* line 277, ../scss/_elements.scss */
+/* line 282, ../scss/_elements.scss */
 section.contact .section-title-number-mobile {
   color: #ffdc8a;
 }
-/* line 282, ../scss/_elements.scss */
+/* line 287, ../scss/_elements.scss */
 section.contact .section-title {
   margin-bottom: 1.875rem;
 }
-/* line 287, ../scss/_elements.scss */
+/* line 292, ../scss/_elements.scss */
 section.contact .row.collapse .columns:first-child {
   padding: 3.75rem 0;
 }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 297, ../scss/_elements.scss */
+  /* line 302, ../scss/_elements.scss */
   section.contact .row.collapse .columns:first-child {
     padding: 0.9375rem 0 1.875rem 0;
   }
-  /* line 301, ../scss/_elements.scss */
+  /* line 306, ../scss/_elements.scss */
   section.contact .row.collapse .columns:last-child {
     border-left: 3px solid #222222;
   }
 }
-/* line 312, ../scss/_elements.scss */
+/* line 317, ../scss/_elements.scss */
 .demonstrative-icon {
   font-size: 12.5rem;
   color: #222222;
 }
 
-/* line 318, ../scss/_elements.scss */
+/* line 323, ../scss/_elements.scss */
 .cta-link {
   font-size: 2.1875rem;
   font-weight: bold;
 }
 
-/* line 324, ../scss/_elements.scss */
-svg {
-  width: 215px;
-  height: auto;
+/* line 332, ../scss/_elements.scss */
+.logo-container {
+  width: 61.6%;
+  height: 0;
+  margin: 0 auto 1.875rem auto;
+  padding-top: 66.89892%;
+  position: relative;
 }
-/* line 329, ../scss/_elements.scss */
-svg path {
+/* line 342, ../scss/_elements.scss */
+.logo-container svg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 351, ../scss/_elements.scss */
+.logo-container svg path {
   fill: #222222;
 }
 
-/* line 335, ../scss/_elements.scss */
+@media only screen and (min-width: 40.063em) {
+  /* line 360, ../scss/_elements.scss */
+  .logo-container {
+    width: 28%;
+    padding-top: 30.4086%;
+  }
+}
+/* line 367, ../scss/_elements.scss */
 .site-title {
   font-size: 6.25rem;
   text-align: center;
 }
 
-/* line 340, ../scss/_elements.scss */
+/* line 372, ../scss/_elements.scss */
 .spaced-top {
   margin-top: 1.875rem;
 }
 
-/* line 344, ../scss/_elements.scss */
+/* line 376, ../scss/_elements.scss */
 .spaced-bottom {
   margin-bottom: 1.875rem;
 }
 
-/* line 349, ../scss/_elements.scss */
+/* line 381, ../scss/_elements.scss */
 code {
   background-color: #030303;
   border: 1px solid #1A1A1A;
@@ -8799,7 +8820,7 @@ code {
   width: 100%;
 }
 
-/* line 363, ../scss/_elements.scss */
+/* line 395, ../scss/_elements.scss */
 code .lineno {
   background-color: #050505;
   padding: 0 10px;

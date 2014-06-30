@@ -1,11 +1,17 @@
 <header>
   <div class="row">
     <div class="small-12 columns text-center">
-    {% include hipone.svg %}
+      <div class="logo-container">
+        <a href="{{ site.url }}">
+          {% include hipone.svg %}
+        </a>
+      </div>
     </div>
     <div class="small-12 columns">
       <div class="title">
-        {{ site.name }}
+        <a href="{{ site.url }}">
+          {{ site.name }}
+        </a>
       </div>
       <div class="subtitle">
         {{ site.description }}
