@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Tutorial - Instant Backend mit Hoodie
+title: Tutorial - Instant Back-End mit Hoodie
 author: Sebastian
 categories: [hoodie, javascript, backend]
 tags: [hoodie, javascript, backend, jquery, node, couchdb]
-excerpt: Auf der Suche nach einem Werkzeug mit dem man das Implementieren der immer gleichen Backend-Features einer Web-Applikation vereinfachen kann? [Hoodie](http://hood.ie/) könnte die richtige Lösung sein. Ein fertiges Backend mit all den Features die beinahe jede Web Applikation braucht. Wie z.B. User-Management, Sessions, Datenhaltung per User, etc.
+excerpt: Auf der Suche nach einem Werkzeug mit dem man das Implementieren der immer gleichen Back-End Features einer Web Applikation vereinfachen kann? [Hoodie](http://hood.ie/) könnte die richtige Lösung sein. Ein fertiges Backend mit all den Features die beinahe jede Web Applikation braucht. Wie z.B. User-Management, Sessions, Datenhaltung per User, etc.
 ---
 
-Auf der Suche nach einem Werkzeug mit dem man das Implementieren der immer gleichen Backend-Features einer Web-Applikation vereinfachen kann?
+Auf der Suche nach einem Werkzeug mit dem man das Implementieren der immer gleichen Back-End Features einer Web Applikation vereinfachen kann?
 
-[Hoodie](http://hood.ie/) könnte die richtige Lösung sein. Ein fertiges Backend mit all den Features die beinahe jede Web Applikation braucht. Wie z.B. User-Management, Sessions, Datenhaltung per User, etc.
+[Hoodie](http://hood.ie/) könnte die richtige Lösung sein. Ein fertiges Back-End mit all den Features die beinahe jede Web Applikation braucht. Wie z.B. User-Management, Sessions, Datenhaltung per User, etc.
 
-In diesem Tutorial zeigen wir wie einfach man sich mit Hoodie ein Instant-Backend zusammenstecken kann, indem wir eine kleine Notizen-Anwendung inklusive Benutzerverwaltung und Datenhaltung bauen.
+In diesem Tutorial zeigen wir wie einfach man sich mit Hoodie ein Instant Back-End zusammenstecken kann, indem wir eine kleine Notizen-Anwendung inklusive Benutzerverwaltung und Datenhaltung bauen.
   
-1\. Backend
+1\. Back-End
 -----------
 
 Hoodie’s Abhänigkeiten sind **git**, **nodejs** and **couchdb**. Sobald wir diese bereit haben lässt sich Hoodie einfach als NPM Packet installieren.
@@ -35,19 +35,19 @@ $ cd MyNotesApp
 $ hoodie start
 {% endhighlight %}
 
-Das ist bereits alles was nötig ist um Hoodie als Backend nutzen zu können. 
+Das ist bereits alles was nötig ist um Hoodie als Back-End nutzen zu können. 
 
 2\. Client
 ----------
 
 Hoodie serviert alle Dateien die im Unterordner **www** liegen direkt auf den entsprechenden Konfigurierten Port (Standardmässig 6001).
-Beim initialisieren eines neuen Projektes wird automatisch eine kleine Demo Applikation erzeugt die sehr hilfreich ist um grundlegende Einblicke in Hoodies Funktionsweise zu bekommen. Wir möchten den **www** Ordner allerdings allein für unsere Notizen-App benutzen und löschen deshalb die Demo App
+Beim initialisieren eines neuen Projektes wird automatisch eine kleine Demo Applikation erzeugt die sehr hilfreich ist um grundlegende Einblicke in Hoodies Funktionsweise zu bekommen. Wir möchten den **www** Ordner allerdings allein für unsere Notizen App benutzen und löschen deshalb die Demo App
 
 {% highlight bash %}
 rm -rf www/*
 {% endhighlight %}
 
-Nun sind wir bereit Hoodies Funktionen auf der Clientseite in unserem eigenen kleinen Test-Frontend zu verwenden. 
+Nun sind wir bereit Hoodies Funktionen auf der Clientseite in unserem eigenen kleinen test Front-End zu verwenden. 
 
 Zuerst legen wir eine **index.html** an:
 
@@ -87,7 +87,7 @@ Zunächst erzeugen wir mit einer Zeile Javascript eine neue Hoodie Instanz.
 var hoodie = new Hoodie();
 {% endhighlight %}
 
-Auf unserer App sollen sich Benutzer mit Namen und Passwort registrieren und einloggen können, diese übergeben wir Hoodies **account.signUp()** bzw. **account.signIn()** Methoden, was in unserem Fall die beiden Funktionen **signUp** und **signIn** erledigen werden.
+Auf unserer App sollen sich Benutzer mit Namen und Passwort registrieren, und einloggen können. Diese übergeben wir Hoodies **account.signUp()** bzw. **account.signIn()** Methoden, was in unserem Fall die beiden Funktionen **signUp** und **signIn** erledigen werden.
 
 {% highlight javascript %}
 function signUp() {
@@ -199,10 +199,10 @@ Zusätzlich wird das Eingabefeld für neue Notizen angezeigt oder versteckt je n
 5\. Profit
 ----------
 
-Gehen wir nun auf **http://localhost:6001" können wir eine kleine Webanwendung mit User-Management bewundern für deren Backend wir keinen Finger krumm machen mussten.
+Gehen wir nun auf **http://localhost:6001** können wir eine kleine Webanwendung mit User Management bewundern für deren Back-End wir keinen Finger krumm machen mussten.
 
 <div style="text-align: center">
   <img src="{{ site.url }}/assets/img/blog/hoodie_notes_demo.png" style="width: auto; padding-bottom: 20px;"/>
 </div>
 
-Unserer Meinung nach ist Hoodie definit ein nützliches Werkzeug auf das es Wert ist aufmerksam zu machen. Auch Features wie Offline-First Fähigkeit und Shared Storage die Hoodie für die Zukunft angekündigt hat klingen äusserst vielversprechend. Man darf gespannt sein was [Hoodie](http://hood.ie/) noch alles vorzeigt!
+Unserer Meinung nach ist Hoodie ein extrem nützliches Werkzeug auf das es wert ist aufmerksam zu machen. Auch Features wie Offline-First Fähigkeit und Shared Storage die Hoodie für die Zukunft angekündigt hat klingen äusserst vielversprechend. Man darf gespannt sein was [Hoodie](http://hood.ie/) noch alles zu bieten haben wird!

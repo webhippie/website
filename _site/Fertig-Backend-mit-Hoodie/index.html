@@ -1,24 +1,24 @@
 <!doctype html>
 <html class="no-js">
   <head>
-    <title>Tutorial - Instant Backend mit Hoodie - Webhippie United</title>
+    <title>Tutorial - Instant Back-End mit Hoodie - Webhippie United</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tutorial - Instant Backend mit Hoodie - Webhippie United" />
+    <meta name="description" content="Tutorial - Instant Back-End mit Hoodie - Webhippie United" />
     <meta name="keywords" content=", " />
-    <meta property="og:title" content="Tutorial - Instant Backend mit Hoodie"/>
+    <meta property="og:title" content="Tutorial - Instant Back-End mit Hoodie"/>
     <meta property="og:site_name" content=" - Webhippie United"/>
-    <meta property="og:url" content=" - http://webhippie.de"/>
+    <meta property="og:url" content=" - http://nerd.local:4000"/>
     <meta property="og:description" content=""/>
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Tutorial - Instant Backend mit Hoodie">
+    <meta name="twitter:title" content="Tutorial - Instant Back-End mit Hoodie">
     <meta name="twitter:description" content="">
   
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://webhippie.de/css/app.css" />
-    <link rel="stylesheet" href="http://webhippie.de/css/pygments.css" />
+    <link rel="stylesheet" href="http://nerd.local:4000/css/app.css" />
+    <link rel="stylesheet" href="http://nerd.local:4000/css/pygments.css" />
     <link rel="shortcut icon" href="favicon.ico">
 
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -29,7 +29,7 @@
   <div class="row">
     <div class="small-12 columns text-center">
       <div class="logo-container">
-        <a href="http://webhippie.de">
+        <a href="http://nerd.local:4000">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 101" preserveAspectRatio="xMinyMin meet">
 	<g>
 		<path d="M33.522,54.16c0-5.891-3.078-12.046-9.452-12.046c-6.331,0-9.496,5.847-9.496,12.354c0,6.33,3.429,12.002,9.452,12.002
@@ -60,7 +60,7 @@
     </div>
     <div class="small-12 columns">
       <div class="title">
-        <a href="http://webhippie.de">
+        <a href="http://nerd.local:4000">
           Webhippie United
         </a>
       </div>
@@ -81,18 +81,18 @@
     <div class="row">
       <div class="small-12 columns">
         <div class="blog-post">
-          <h1>Tutorial - Instant Backend mit Hoodie</h1>
+          <h1>Tutorial - Instant Back-End mit Hoodie</h1>
           <div class="post-info">
-            04.07.2014 / Sebastian
+            02.08.2014 / Sebastian
           </div>
           <div class="post-content spaced-top spaced-bottom">
-            <p>Auf der Suche nach einem Werkzeug mit dem man das Implementieren der immer gleichen Backend-Features einer Web-Applikation vereinfachen kann?</p>
+            <p>Auf der Suche nach einem Werkzeug mit dem man das Implementieren der immer gleichen Back-End Features einer Web Applikation vereinfachen kann?</p>
 
-<p><a href="http://hood.ie/">Hoodie</a> könnte die richtige Lösung sein. Ein fertiges Backend mit all den Features die beinahe jede Web Applikation braucht. Wie z.B. User-Management, Sessions, Datenhaltung per User, etc.</p>
+<p><a href="http://hood.ie/">Hoodie</a> könnte die richtige Lösung sein. Ein fertiges Back-End mit all den Features die beinahe jede Web Applikation braucht. Wie z.B. User-Management, Sessions, Datenhaltung per User, etc.</p>
 
-<p>In diesem Tutorial zeigen wir wie einfach man sich mit Hoodie ein Instant-Backend zusammenstecken kann, indem wir eine kleine Notizen-Anwendung inklusive Benutzerverwaltung und Datenhaltung bauen.</p>
+<p>In diesem Tutorial zeigen wir wie einfach man sich mit Hoodie ein Instant Back-End zusammenstecken kann, indem wir eine kleine Notizen-Anwendung inklusive Benutzerverwaltung und Datenhaltung bauen.</p>
 
-<h2 id="backend">1. Backend</h2>
+<h2 id="back-end">1. Back-End</h2>
 
 <p>Hoodie’s Abhänigkeiten sind <strong>git</strong>, <strong>nodejs</strong> and <strong>couchdb</strong>. Sobald wir diese bereit haben lässt sich Hoodie einfach als NPM Packet installieren.</p>
 
@@ -110,17 +110,17 @@
 <span class="nv">$ </span>hoodie start
 </code></pre></div>
 
-<p>Das ist bereits alles was nötig ist um Hoodie als Backend nutzen zu können. </p>
+<p>Das ist bereits alles was nötig ist um Hoodie als Back-End nutzen zu können. </p>
 
 <h2 id="client">2. Client</h2>
 
 <p>Hoodie serviert alle Dateien die im Unterordner <strong>www</strong> liegen direkt auf den entsprechenden Konfigurierten Port (Standardmässig 6001).
-Beim initialisieren eines neuen Projektes wird automatisch eine kleine Demo Applikation erzeugt die sehr hilfreich ist um grundlegende Einblicke in Hoodies Funktionsweise zu bekommen. Wir möchten den <strong>www</strong> Ordner allerdings allein für unsere Notizen-App benutzen und löschen deshalb die Demo App</p>
+Beim initialisieren eines neuen Projektes wird automatisch eine kleine Demo Applikation erzeugt die sehr hilfreich ist um grundlegende Einblicke in Hoodies Funktionsweise zu bekommen. Wir möchten den <strong>www</strong> Ordner allerdings allein für unsere Notizen App benutzen und löschen deshalb die Demo App</p>
 
 <div class="highlight"><pre><code class="bash">rm -rf www/*
 </code></pre></div>
 
-<p>Nun sind wir bereit Hoodies Funktionen auf der Clientseite in unserem eigenen kleinen Test-Frontend zu verwenden. </p>
+<p>Nun sind wir bereit Hoodies Funktionen auf der Clientseite in unserem eigenen kleinen test Front-End zu verwenden. </p>
 
 <p>Zuerst legen wir eine <strong>index.html</strong> an:</p>
 
@@ -158,7 +158,7 @@ Beim initialisieren eines neuen Projektes wird automatisch eine kleine Demo Appl
 <div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">hoodie</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Hoodie</span><span class="p">();</span>
 </code></pre></div>
 
-<p>Auf unserer App sollen sich Benutzer mit Namen und Passwort registrieren und einloggen können, diese übergeben wir Hoodies <strong>account.signUp()</strong> bzw. <strong>account.signIn()</strong> Methoden, was in unserem Fall die beiden Funktionen <strong>signUp</strong> und <strong>signIn</strong> erledigen werden.</p>
+<p>Auf unserer App sollen sich Benutzer mit Namen und Passwort registrieren, und einloggen können. Diese übergeben wir Hoodies <strong>account.signUp()</strong> bzw. <strong>account.signIn()</strong> Methoden, was in unserem Fall die beiden Funktionen <strong>signUp</strong> und <strong>signIn</strong> erledigen werden.</p>
 
 <div class="highlight"><pre><code class="javascript"><span class="kd">function</span> <span class="nx">signUp</span><span class="p">()</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#email_input&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
@@ -262,13 +262,13 @@ Beim initialisieren eines neuen Projektes wird automatisch eine kleine Demo Appl
 
 <h2 id="profit">5. Profit</h2>
 
-<p>Gehen wir nun auf **http://localhost:6001” können wir eine kleine Webanwendung mit User-Management bewundern für deren Backend wir keinen Finger krumm machen mussten.</p>
+<p>Gehen wir nun auf <strong>http://localhost:6001</strong> können wir eine kleine Webanwendung mit User Management bewundern für deren Back-End wir keinen Finger krumm machen mussten.</p>
 
 <div style="text-align: center">
-  <img src="http://webhippie.de/assets/img/blog/hoodie_notes_demo.png" style="width: auto; padding-bottom: 20px;" />
+  <img src="http://nerd.local:4000/assets/img/blog/hoodie_notes_demo.png" style="width: auto; padding-bottom: 20px;" />
 </div>
 
-<p>Unserer Meinung nach ist Hoodie definit ein nützliches Werkzeug auf das es Wert ist aufmerksam zu machen. Auch Features wie Offline-First Fähigkeit und Shared Storage die Hoodie für die Zukunft angekündigt hat klingen äusserst vielversprechend. Man darf gespannt sein was <a href="http://hood.ie/">Hoodie</a> noch alles vorzeigt!</p>
+<p>Unserer Meinung nach ist Hoodie ein extrem nützliches Werkzeug auf das es wert ist aufmerksam zu machen. Auch Features wie Offline-First Fähigkeit und Shared Storage die Hoodie für die Zukunft angekündigt hat klingen äusserst vielversprechend. Man darf gespannt sein was <a href="http://hood.ie/">Hoodie</a> noch alles zu bieten haben wird!</p>
 
           </div>      
           <div class="post-tags">
@@ -297,17 +297,17 @@ Beim initialisieren eines neuen Projektes wird automatisch eine kleine Demo Appl
     <footer>
   <div class="row">
     <div class="small-12 columns text-center">
-      &copy; 2014 Webhippie Team | <a href="http://webhippie.de/imprint.html">Impressum</a>
+      &copy; 2014 Webhippie Team | <a href="http://nerd.local:4000/imprint.html">Impressum</a>
     </div>
   </div>
 </footer>
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="http://webhippie.de/bower_components/jquery/jquery.js"><\/script>')</script>
-    <script src="http://webhippie.de/js/plugins.js"></script>
-    <script src="http://webhippie.de/bower_components/foundation/js/foundation.min.js"></script>
-    <script src="http://webhippie.de/js/jquery.fittext.js"></script>
-    <script src="http://webhippie.de/js/app.js"></script>
+    <script>window.jQuery || document.write('<script src="http://nerd.local:4000/bower_components/jquery/jquery.js"><\/script>')</script>
+    <script src="http://nerd.local:4000/js/plugins.js"></script>
+    <script src="http://nerd.local:4000/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="http://nerd.local:4000/js/jquery.fittext.js"></script>
+    <script src="http://nerd.local:4000/js/app.js"></script>
   </body>
 </html>
