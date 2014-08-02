@@ -83,7 +83,7 @@ Selbstgebauter Button befindet.
 Hier das Ergebnis des Beispielformulars von oben:
 
 <div style="text-align: center">
-	<img src="{{ site.url }}/assets/img/custom_form_1.png" style="width: auto; padding-bottom: 20px;"/>
+	<img src="{{ site.url }}/assets/img/blog/custom_form_1.png" style="width: auto; padding-bottom: 20px;"/>
 </div>
   
 Foundation bietet schon einen fertigen Custom-Form Style für Radio Buttons den wir hier sehen.
@@ -113,7 +113,7 @@ Für dieses Beispiel geben wir dem Button eine grüne Rahmenfarbe und eine Rahme
 Das Ergebnis ist folgendes: 
 
 <div style="text-align: center">
-	<img src="{{ site.url }}/assets/img/custom_form_2.png" style="width: auto; padding-bottom: 20px;"/>
+	<img src="{{ site.url }}/assets/img/blog/custom_form_2.png" style="width: auto; padding-bottom: 20px;"/>
 </div>
 
 Wenn wir den Button nun anklicken bekommt er von Foundation die Klasse **.checked** zugewiesen. Über diese Klasse können wir dem ausgewählten Radio-Button einen eigenen Style geben.
@@ -145,7 +145,7 @@ und überschreiben damit nebenbei ebenfalls die Werte des Foundation-Standard-St
 Unser ausgewählter Radio-Button sieht nun so aus:
 
 <div style="text-align: center">
-  <img src="{{ site.url }}/assets/img/custom_form_3.png" style="width: auto; padding-bottom: 20px;"/>
+  <img src="{{ site.url }}/assets/img/blog/custom_form_3.png" style="width: auto; padding-bottom: 20px;"/>
 </div>
 
 Wunderschön :)
@@ -156,7 +156,7 @@ Textfluss
 Soweit sieht der Button schon sehr gut aus. Ein Problem tritt jedoch auf sobald die Beschriftung des Buttons etwas länger wird und der Text umbricht.
 
 <div style="text-align: center">
-  <img src="{{ site.url }}/assets/img/custom_form_4.png" style="width: auto; padding-bottom: 20px;"/>
+  <img src="{{ site.url }}/assets/img/blog/custom_form_4.png" style="width: auto; padding-bottom: 20px;"/>
 </div>
 
 Wie man sieht Umfliesst der Text den Radio-Button, was man in vielen Designsituationen eher weniger gut aussieht.
@@ -223,7 +223,7 @@ form.custom .custom.radio.checked:before
 Sowie das Ergebnis:
 
 <div style="text-align: center">
-  <img src="{{ site.url }}/assets/img/custom_form_5.png" style="width: auto; padding-bottom: 20px;"/>
+  <img src="{{ site.url }}/assets/img/blog/custom_form_5.png" style="width: auto; padding-bottom: 20px;"/>
 </div>
 
 Und schon können wir einen von uns selbst gestalteten Radio-Button bewundern der auch noch eine sauber formatierte Beschriftung bietet.

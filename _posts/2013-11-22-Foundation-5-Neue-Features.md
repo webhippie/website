@@ -21,7 +21,7 @@ Minimalistisches Design
 Alle mitgelieferten GUI Elemente in Foundation 5 sind in einem neuen minimalistischen Flat-Design gehalten und liegen somit voll im momentanen Design Trend.
 
 <div style="text-align: center">
-  <img src="{{ site.url }}/assets/img/foundation_minimalistic.jpg" style="width: auto; padding-bottom: 20px;"/>
+  <img src="{{ site.url }}/assets/img/blog/foundation_minimalistic.jpg" style="width: auto; padding-bottom: 20px;"/>
 </div>
  
 Das neue Design erleichtert uns Webentwicklern das Leben mit Designern und Kunden enorm, da zurzeit viele Webseiten in einem schlicht gehaltenem Stil gewünscht werden.
