@@ -4,7 +4,7 @@ title: Tutorial - Instant Backend mit Hoodie
 author: Sebastian
 categories: [hoodie, javascript, backend]
 tags: [hoodie, javascript, backend, jquery, node, couchdb]
-excerpt: Are you looking for a tool that helps you avoid implementing those ever same features when creating a backend for a web application? [Hoodie](http://hood.ie/) might just be the right solution for you. It’s a premade backend with all the features that most web apps need, like user management, sessions, data storage per user and shared data. In this tutorial we show you how you can easily cook up an instant backend with hoodie. We will build a little note taking application with user management and user data storage.
+excerpt: Auf der Suche nach einem Werkzeug mit dem man das Implementieren der immer gleichen Backend-Features einer Web-Applikation vereinfachen kann? [Hoodie](http://hood.ie/) könnte die richtige Lösung sein. Ein fertiges Backend mit all den Features die beinahe jede Web Applikation braucht. Wie z.B. User-Management, Sessions, Datenhaltung per User, etc.
 ---
 
 Auf der Suche nach einem Werkzeug mit dem man das Implementieren der immer gleichen Backend-Features einer Web-Applikation vereinfachen kann?
