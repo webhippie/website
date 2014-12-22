@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC);
-/* normalize.css v3.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -8661,11 +8661,11 @@ section.team li .foto-name {
 /* line 209, ../scss/_elements.scss */
 section.references {
   padding: 1.875rem 0;
-  background-color: #8e7b57;
+  background-color: #a06b20;
 }
 /* line 214, ../scss/_elements.scss */
 section.references .section-title-number-mobile {
-  color: #8e7b57;
+  color: #a06b20;
 }
 
 /* Blog */
