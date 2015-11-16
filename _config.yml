@@ -1,14 +1,30 @@
-name : Webhippie United
-brand : Webhippie
-description : Software- und Web-Entwicklung
-keyword:  
-url : http://webhippie.de
-email : mail@webhippie.com
-author: Webhippie Team
-markdown: kramdown
-pygments: true
-permalink: /:title
+title: "Webhippie United"
+slogan: "Software- und Web-Entwicklung"
+url: "http://webhippie.de"
+
+description: "Zusammenschluss junger, agiler Webentwickler und Designer"
+keywords: "webhippie, united, rails, angular, meteor"
+
+highlighter: true
+safe: false
+
+gems:
+  - "jekyll-assets"
+
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - Rakefile
+  - "Rakefile"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+
+assets:
+  sources:
+    - "_assets/fonts"
+    - "_assets/javascripts"
+    - "_assets/stylesheets"
+  assets:
+    - "*.eot"
+    - "*.svg"
+    - "*.ttf"
+    - "*.woff"
+    - "*.woff2"

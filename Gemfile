@@ -1,7 +1,10 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+
+group :plugins do
+  gem "jekyll-assets"
+end
 
 group :development do
-  gem 'rake'
-  gem 'github-pages'
-  gem 'jekyll-haml'
+  gem "jekyll"
+  gem "rake"
 end
