@@ -1,0 +1,15 @@
+pipeline:
+  build:
+    image: webhippie/ruby:latest
+    commands:
+      - bundle install
+      - jekyll build -V
+
+  publish:
+    image: dronecommunity/pubstorm
+    when:
+      event: push
+      branch: master
+
+  # gitter:
+  #   image: plugins/gitter
