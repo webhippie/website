@@ -1,3 +1,6 @@
+workspace:
+  path: src
+
 pipeline:
   build:
     image: webhippie/ruby:latest
@@ -5,11 +8,24 @@ pipeline:
       - bundle install
       - jekyll build -V
 
-  publish:
-    image: dronecommunity/pubstorm
+  docker:
+    image: plugins/docker
+    secrets: [ docker_username, docker_password ]
+    repo: tboerger/webhippie
+    tags: [ '${TAG}' ]
+    when:
+      event: tag
+      branch: refs/tags/*
+
+  docker:
+    image: plugins/docker
+    secrets: [ docker_username, docker_password ]
+    repo: tboerger/webhippie
+    tags: [ 'latest' ]
     when:
       event: push
       branch: master
 
-  # gitter:
-  #   image: plugins/gitter
+  gitter:
+    image: plugins/gitter
+    secrets: [ gitter_webhook ]
