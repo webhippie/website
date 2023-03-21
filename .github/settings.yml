@@ -1,7 +1,7 @@
 ---
 repository:
   name: website
-  description: Website
+  description: Website for the Webhippie team
   homepage: https://webhippie.de
   topics: website, hugo
 
