@@ -1,0 +1,33 @@
+---
+baseurl: /
+languageCode: en-us
+title: Webhippie United
+disableKinds: RSS
+
+params:
+  Description: Software- und Web-Entwicklung
+  Author: Webhippie United
+  Website: https://webhippie.de
+  Github: webhippie
+
+module:
+  mounts:
+    - source: content
+      target: content
+    - source: static
+      target: static
+    - source: layouts
+      target: layouts
+    - source: data
+      target: data
+    - source: assets
+      target: assets
+    - source: i18n
+      target: i18n
+    - source: archetypes
+      target: archetypes
+
+    - source: node_modules/@fontsource/alegreya-sans-sc/files/alegreya-sans-sc-all-400-normal.woff
+      target: static/fonts/alegreya-sans-sc-all-400-normal.woff
+
+...

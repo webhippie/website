@@ -1,0 +1,65 @@
+{{ $logo := resources.Get "/hipone.svg" }}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" {{ with .Site.LanguageCode }}lang="{{ . }}" {{ end }}>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	{{ hugo.Generator }}
+
+	<title>
+		{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}
+	</title>
+
+	{{ with .Site.Params.Description }}
+	<meta name="description" content="{{ . }}">
+	{{ end }}
+
+	{{ with .Site.Params.Author }}
+	<meta name="author" content="{{ . }}">
+	{{ end }}
+
+	<base href="{{ .Site.BaseURL }}">
+
+	<link rel="canonical" href="{{ .Permalink }}">
+	<link rel="shortcut icon" type="image/svg+xml" href="hipone.svg">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+	{{ with .OutputFormats.Get "RSS" }}
+	<link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+	<link href="{{ . }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+	{{ end }}
+
+	{{ $options := (dict "targetPath" "index.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+	{{ $style := resources.Get "index.scss" | resources.ToCSS $options | resources.PostCSS | resources.Minify |
+	resources.Fingerprint "sha512" }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center mb-5">
+					<a href="/" class="logo col-xl-3 col-md-3 col-sm-4 col-5">
+						<img src="{{ $logo.RelPermalink }}" />
+					</a>
+				</div>
+
+				<div class="col-lg-12 text-center">
+					<div class="h1">
+						<a href="/">
+							{{ .Site.Title }}
+						</a>
+					</div>
+
+					<div class="h5">
+						{{ .Site.Params.description }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>

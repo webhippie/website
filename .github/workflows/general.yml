@@ -1,0 +1,53 @@
+---
+name: general
+
+"on":
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  general:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        id: source
+        uses: actions/checkout@v3
+
+      - name: Setup nodejs
+        id: nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: npm
+
+      - name: Setup hugo
+        id: hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+          extended: true
+
+      - name: Install assets
+        id: assets
+        run: npm install --ci
+
+      - name: Build website
+        id: build
+        run: hugo --cleanDestinationDir --enableGitInfo --minify --gc
+
+      - name: Deploy website
+        id: deploy
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        uses: careflow/netlify-actions/cli@master
+        with:
+          args: deploy --prod --dir public/
+
+...
