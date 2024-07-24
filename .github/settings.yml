@@ -33,6 +33,7 @@ branches:
       enforce_admins: false
       restrictions:
         apps:
+          - webhippie
           - renovate
         users: []
         teams:
