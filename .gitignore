@@ -1,6 +1,8 @@
-.direnv
-.devenv
+.direnv/
+.devenv/
 
-/node_modules/
-/public/
-/resources/
+.pre-commit-config.yaml
+
+node_modules/
+public/
+resources/
