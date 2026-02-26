@@ -58,7 +58,7 @@
               default = {
                 git-hooks = {
                   hooks = {
-                    nixfmt-rfc-style = {
+                    nixfmt = {
                       enable = true;
                     };
                   };
@@ -74,7 +74,7 @@
                 packages = with pkgs; [
                   gnumake
                   hugo
-                  nixfmt-rfc-style
+                  nixfmt
                 ];
               };
             };
