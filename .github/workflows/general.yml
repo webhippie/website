@@ -20,33 +20,27 @@ jobs:
 
     steps:
       - name: Checkout source
-        id: source
         uses: actions/checkout@v6
 
       - name: Setup nodejs
-        id: nodejs
         uses: actions/setup-node@v6
         with:
           node-version: 24.x
           cache: npm
 
       - name: Setup hugo
-        id: hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: latest
+          hugo-version: 0.161.1
           extended: true
 
       - name: Install assets
-        id: assets
         run: npm install --ci
 
       - name: Build website
-        id: build
         run: hugo --cleanDestinationDir --enableGitInfo --minify --gc
 
       - name: Deploy website
-        id: deploy
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
