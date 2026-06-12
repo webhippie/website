@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs = {
-      url = "github:nixos/nixpkgs/nixos-25.11";
+      url = "github:nixos/nixpkgs/nixos-26.05";
     };
 
     devenv = {
@@ -67,7 +67,7 @@
                 languages = {
                   javascript = {
                     enable = true;
-                    package = pkgs.nodejs_20;
+                    package = pkgs.nodejs_24;
                   };
                 };
 
