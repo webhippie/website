@@ -1,6 +1,6 @@
 ---
 baseurl: /
-languageCode: en-us
+locale: en-us
 title: Webhippie United
 disableKinds: RSS
 
