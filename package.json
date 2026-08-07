@@ -1,8 +1,8 @@
 {
   "private": true,
   "name": "website",
-  "version": "0.1.0",
-  "description": "Website for the team of Webhippie",
+  "version": "0.0.0",
+  "description": "Assets for Webhippie website",
   "homepage": "https://github.com/webhippie/website#readme",
   "license": "CC-BY-SA-4.0",
   "author": {
@@ -20,7 +20,7 @@
   "config": {},
   "dependencies": {
     "@fontsource/alegreya-sans-sc": "^5.0.0",
-    "@fortawesome/fontawesome-free": "^7.0.0",
+    "@fortawesome/fontawesome-free": "^7.3.1",
     "autoprefixer": "10.5.4",
     "bootstrap": "5.3.8",
     "bootstrap-icons": "1.13.1",
@@ -28,7 +28,9 @@
     "postcss-cli": "11.0.1"
   },
   "keywords": [
-    "webhippie",
-    "website"
-  ]
+    "webhippie"
+  ],
+  "allowScripts": {
+    "fsevents@2.3.3": true
+  }
 }

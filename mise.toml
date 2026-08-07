@@ -1,0 +1,8 @@
+#:schema https://mise.jdx.dev/schema/mise.json
+
+[tools]
+hugo-extended = "0.164.0"
+node = "24"
+pre-commit = "4.6.1"
+
+"npm:sass-embedded" = "1.100.0"

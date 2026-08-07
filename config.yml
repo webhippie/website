@@ -2,7 +2,9 @@
 baseurl: /
 locale: en-us
 title: Webhippie United
-disableKinds: RSS
+
+disableKinds:
+  - rss
 
 params:
   Description: Software- und Web-Entwicklung
@@ -27,7 +29,17 @@ module:
     - source: archetypes
       target: archetypes
 
-    - source: node_modules/@fontsource/alegreya-sans-sc/files/alegreya-sans-sc-all-400-normal.woff
-      target: static/fonts/alegreya-sans-sc-all-400-normal.woff
+    - source: node_modules/@fontsource/alegreya-sans-sc/files/alegreya-sans-sc-latin-400-normal.woff
+      target: static/fonts/alegreya-sans-sc-latin-400-normal.woff
+
+    - source: node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
+      target: assets/vendor/bootstrap.js
+
+    - source: node_modules/@fortawesome/fontawesome-free/webfonts
+      target: static/webfonts
+
+security:
+  allowContent:
+    - text/html
 
 ...

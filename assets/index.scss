@@ -1,12 +1,14 @@
-@import "node_modules/bootstrap/scss/bootstrap.scss";
-@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@use "sass:color";
+@use "node_modules/bootstrap/scss/bootstrap";
+@use "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@use "node_modules/@fortawesome/fontawesome-free/scss/solid";
 
 @font-face {
     font-family: 'Alegreya Sans SC';
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url('./fonts/alegreya-sans-sc-all-400-normal.woff') format('woff');
+    src: url('./fonts/alegreya-sans-sc-latin-400-normal.woff') format('woff');
   }
 
 html {
@@ -69,7 +71,7 @@ header {
     a:hover,
     a:focus,
     a:active {
-        color: lighten(#222, 25%);
+        color: color.adjust(#222, $lightness: 25%);
     }
 }
 
@@ -83,10 +85,10 @@ footer {
     a:link,
     a:focus,
     a:active {
-        color: lighten(#F29B1B, 25%);
+        color: color.adjust(#F29B1B, $lightness: 25%);
     }
 
     a:hover {
-        color: lighten(lighten(#F29B1B, 25%), 10%);
+        color: color.adjust(color.adjust(#F29B1B, $lightness: 25%), $lightness: 10%);
     }
 }

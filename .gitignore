@@ -1,8 +1,7 @@
-.direnv/
-.devenv/
-
-.pre-commit-config.yaml
+mise.local.toml
 
 node_modules/
 public/
 resources/
+
+.hugo_build.lock
