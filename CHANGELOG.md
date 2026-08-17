@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/webhippie/website/compare/v1.0.0...v1.1.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency hugo-extended to v0.165.0 ([#208](https://github.com/webhippie/website/issues/208)) ([6bdd51f](https://github.com/webhippie/website/commit/6bdd51f3330b1287107b4ec6cc9208b000793a97))
+* **minor:** update dependency npm:sass-embedded to v1.102.0 ([#209](https://github.com/webhippie/website/issues/209)) ([e2d58ce](https://github.com/webhippie/website/commit/e2d58ce0708956c185662b7955b35a79bdd14302))
+* **patch:** update dependency pre-commit to v4.6.2 ([#207](https://github.com/webhippie/website/issues/207)) ([3269605](https://github.com/webhippie/website/commit/3269605a6154a7b5b55f1c6c1862c823fdb7ac8f))
+
 ## 1.0.0 (2026-08-10)
 
 ### Features
