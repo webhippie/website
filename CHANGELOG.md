@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.0](https://github.com/webhippie/website/compare/v1.1.0...v1.2.0) (2026-08-24)
+
+### Dependencies
+
+* **minor:** update dependency npm:sass-embedded to v1.103.1 ([#211](https://github.com/webhippie/website/issues/211)) ([17974f0](https://github.com/webhippie/website/commit/17974f069be69bd7ce557b893a3bc9659121ce33))
+
 ## [1.1.0](https://github.com/webhippie/website/compare/v1.0.0...v1.1.0) (2026-08-17)
 
 ### Dependencies
