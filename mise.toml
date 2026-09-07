@@ -5,4 +5,4 @@ hugo-extended = "0.165.0"
 node = "24"
 pre-commit = "4.6.2"
 
-"npm:sass-embedded" = "1.103.1"
+"npm:sass-embedded" = "1.104.0"
