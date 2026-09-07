@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/webhippie/website/compare/v1.2.0...v1.3.0) (2026-09-07)
+
+### Dependencies
+
+* **minor:** update dependency npm:sass-embedded to v1.104.0 ([#216](https://github.com/webhippie/website/issues/216)) ([e3ac0b1](https://github.com/webhippie/website/commit/e3ac0b1d5bf748f38b8b2864d9ab638239acd960))
+* **patch:** update dependency postcss to v8.5.27 ([#214](https://github.com/webhippie/website/issues/214)) ([4cd3356](https://github.com/webhippie/website/commit/4cd3356d51ff05ccbcfed7436ffbc8e81e0451f0))
+* **patch:** update dependency postcss to v8.5.28 ([#215](https://github.com/webhippie/website/issues/215)) ([c66fadb](https://github.com/webhippie/website/commit/c66fadb2c0ab02915fa59923fc60f6a4c594f08c))
+
 ## [1.2.0](https://github.com/webhippie/website/compare/v1.1.0...v1.2.0) (2026-08-24)
 
 ### Dependencies
