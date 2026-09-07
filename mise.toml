@@ -3,6 +3,6 @@
 [tools]
 hugo-extended = "0.165.0"
 node = "24"
-pre-commit = "4.6.2"
+prek = "0.5.2"
 
 "npm:sass-embedded" = "1.104.0"
