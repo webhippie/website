@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.0.0](https://github.com/webhippie/website/compare/v1.3.0...v2.0.0) (2026-09-14)
+
+### Dependencies
+
+* **major:** update dependency postcss-cli to v12 ([#219](https://github.com/webhippie/website/issues/219)) ([b866367](https://github.com/webhippie/website/commit/b866367ee5e110fb8e0901b01a81f27cb9fa32fe))
+* **minor:** update dependency hugo-extended to v0.166.0 ([#220](https://github.com/webhippie/website/issues/220)) ([f2d27b2](https://github.com/webhippie/website/commit/f2d27b27e0d5ef5886395b804d5c54669417ee35))
+* **patch:** update dependency autoprefixer to v10.5.5 ([#218](https://github.com/webhippie/website/issues/218)) ([7243803](https://github.com/webhippie/website/commit/7243803767e8940deb858e711735b4e973caf452))
+* **patch:** update dependency autoprefixer to v10.5.6 ([#222](https://github.com/webhippie/website/issues/222)) ([acb6d58](https://github.com/webhippie/website/commit/acb6d5869bcb9f3f0fc18b9809d6beeb98b27bff))
+* **patch:** update dependency prek to v0.5.3 ([#221](https://github.com/webhippie/website/issues/221)) ([868eb84](https://github.com/webhippie/website/commit/868eb84ee0e5aaae85990e7e576fd24e991f3453))
+
 ## [1.3.0](https://github.com/webhippie/website/compare/v1.2.0...v1.3.0) (2026-09-07)
 
 ### Dependencies
