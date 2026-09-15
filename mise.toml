@@ -5,4 +5,4 @@ hugo-extended = "0.166.0"
 node = "24"
 prek = "0.5.3"
 
-"npm:sass-embedded" = "1.104.0"
+"npm:sass-embedded" = "1.104.1"
