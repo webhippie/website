@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.0](https://github.com/webhippie/website/compare/v2.0.0...v2.1.0) (2026-09-21)
+
+### Dependencies
+
+* **minor:** update dependency autoprefixer to v10.6.0 ([#225](https://github.com/webhippie/website/issues/225)) ([ec8121e](https://github.com/webhippie/website/commit/ec8121e98ba10b2bdaccd4daf2d5ad7bd362e610))
+* **mise:** update dependency npm:sass-embedded to v1.104.1 ([#224](https://github.com/webhippie/website/issues/224)) ([513282a](https://github.com/webhippie/website/commit/513282a60cc9e530056434265f0e049b6749b696))
+* **patch:** update dependency autoprefixer to v10.6.1 ([#226](https://github.com/webhippie/website/issues/226)) ([4c1c3e6](https://github.com/webhippie/website/commit/4c1c3e68bd30bed1045577b50a1392ba23333b3d))
+
 ## [2.0.0](https://github.com/webhippie/website/compare/v1.3.0...v2.0.0) (2026-09-14)
 
 ### Dependencies
