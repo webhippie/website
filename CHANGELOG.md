@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.1](https://github.com/webhippie/website/compare/v2.1.0...v2.1.1) (2026-10-12)
+
+### Dependencies
+
+* **mise:** update dependency hugo-extended to v0.167.0 ([#231](https://github.com/webhippie/website/issues/231)) ([864b506](https://github.com/webhippie/website/commit/864b50636958088143ad1342843693f8ed362248))
+* **mise:** update dependency npm:sass-embedded to v1.105.0 ([#228](https://github.com/webhippie/website/issues/228)) ([3374f1c](https://github.com/webhippie/website/commit/3374f1c3e1ab98c6aeb8df0c12486d0b1d540483))
+* **mise:** update dependency npm:sass-embedded to v1.105.1 ([#233](https://github.com/webhippie/website/issues/233)) ([d31de73](https://github.com/webhippie/website/commit/d31de731f167ae22191898c05d218850c9f01857))
+* **mise:** update dependency prek to v0.5.4 ([#230](https://github.com/webhippie/website/issues/230)) ([0680583](https://github.com/webhippie/website/commit/06805839f15328bda0bab76a0abcb955a95b8000))
+* **mise:** update dependency prek to v0.5.5 ([#235](https://github.com/webhippie/website/issues/235)) ([fa5bee9](https://github.com/webhippie/website/commit/fa5bee9d6e0a40bf16e8200b982eeb5ff26b7d01))
+* **patch:** update dependency bootstrap-icons to v1.13.2 ([#237](https://github.com/webhippie/website/issues/237)) ([4022cc0](https://github.com/webhippie/website/commit/4022cc0ef4c8ff3e15febae70f8b7e8ea9bca024))
+* **patch:** update dependency postcss to v8.5.29 ([#236](https://github.com/webhippie/website/issues/236)) ([c7a1102](https://github.com/webhippie/website/commit/c7a11028496ffacd07f790b5f43ade5dd9ee7b83))
+
 ## [2.1.0](https://github.com/webhippie/website/compare/v2.0.0...v2.1.0) (2026-09-21)
 
 ### Dependencies
