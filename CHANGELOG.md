@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.2](https://github.com/webhippie/website/compare/v2.1.1...v2.1.2) (2026-10-19)
+
+### Dependencies
+
+* **mise:** update dependency hugo-extended to v0.168.0 ([#239](https://github.com/webhippie/website/issues/239)) ([f67e656](https://github.com/webhippie/website/commit/f67e6566f29528a52448c03b0f70755057fc2e21))
+* **mise:** update dependency npm:sass-embedded to v1.105.2 ([#242](https://github.com/webhippie/website/issues/242)) ([f8a0e4d](https://github.com/webhippie/website/commit/f8a0e4d1568d68ddbaa3ed2193ba57d58de8a8c2))
+* **mise:** update dependency prek to v0.5.6 ([#243](https://github.com/webhippie/website/issues/243)) ([e63ac41](https://github.com/webhippie/website/commit/e63ac41100ced78ef4f436d497c9f8ea28b54b04))
+* **patch:** update dependency postcss to v8.5.30 ([#240](https://github.com/webhippie/website/issues/240)) ([9894e05](https://github.com/webhippie/website/commit/9894e05230bec59da64cde72da6f52610194fbd7))
+
 ## [2.1.1](https://github.com/webhippie/website/compare/v2.1.0...v2.1.1) (2026-10-12)
 
 ### Dependencies
