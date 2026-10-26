@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.3](https://github.com/webhippie/website/compare/v2.1.2...v2.1.3) (2026-10-26)
+
+### Dependencies
+
+* **mise:** update dependency npm:sass-embedded to v1.106.0 ([#246](https://github.com/webhippie/website/issues/246)) ([7d61cdc](https://github.com/webhippie/website/commit/7d61cdcca852c4d078f971e024f341471d319916))
+* **mise:** update dependency npm:sass-embedded to v1.106.1 ([#247](https://github.com/webhippie/website/issues/247)) ([0c25b3c](https://github.com/webhippie/website/commit/0c25b3c1e0a5c5152a372a30218a669a8dcc6e5d))
+* **mise:** update dependency prek to v0.5.7 ([#244](https://github.com/webhippie/website/issues/244)) ([2c4bb22](https://github.com/webhippie/website/commit/2c4bb22c2f40a7ad1a23d6db06609a2da45679df))
+* **patch:** update dependency postcss to v8.5.31 ([#245](https://github.com/webhippie/website/issues/245)) ([2c382a1](https://github.com/webhippie/website/commit/2c382a1244fecd89fa7de8159c4849ec8d129a83))
+
 ## [2.1.2](https://github.com/webhippie/website/compare/v2.1.1...v2.1.2) (2026-10-19)
 
 ### Dependencies
