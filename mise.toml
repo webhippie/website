@@ -2,7 +2,7 @@
 
 [tools]
 hugo-extended = "0.169.0"
-node = "24"
+node = "26"
 prek = "0.5.7"
 
 "npm:sass-embedded" = "1.106.1"
