@@ -3,6 +3,6 @@
 [tools]
 hugo-extended = "0.169.0"
 node = "26"
-prek = "0.5.7"
+prek = "0.5.9"
 
 "npm:sass-embedded" = "1.106.1"
