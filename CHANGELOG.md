@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.1.4](https://github.com/webhippie/website/compare/v2.1.3...v2.1.4) (2026-11-02)
+
+### Dependencies
+
+* **mise:** update dependency hugo-extended to v0.169.0 ([#249](https://github.com/webhippie/website/issues/249)) ([5cea54c](https://github.com/webhippie/website/commit/5cea54ccdf1bdd352178c7bf890926a1c8294468))
+* **mise:** update dependency npm:sass-embedded to v1.107.0 ([#254](https://github.com/webhippie/website/issues/254)) ([11a2123](https://github.com/webhippie/website/commit/11a2123cb50f221ba3d50f405f78990c277b1567))
+* **mise:** update dependency prek to v0.5.9 ([#253](https://github.com/webhippie/website/issues/253)) ([442f17e](https://github.com/webhippie/website/commit/442f17eda631da16f9021fb32922940e865d53f6))
+* **mise:** update node.js to v26 ([#250](https://github.com/webhippie/website/issues/250)) ([2702b37](https://github.com/webhippie/website/commit/2702b377279a9fbb20d00fddc8780d8f1bb0a9b4))
+* **patch:** update dependency autoprefixer to v10.6.2 ([#251](https://github.com/webhippie/website/issues/251)) ([bd3ad3f](https://github.com/webhippie/website/commit/bd3ad3faa4a5c611de5a9863c98bfe22ba78fae1))
+* **patch:** update dependency postcss to v8.5.32 ([#252](https://github.com/webhippie/website/issues/252)) ([8006743](https://github.com/webhippie/website/commit/8006743ad681533e67353ba9ef923358c6d00434))
+
 ## [2.1.3](https://github.com/webhippie/website/compare/v2.1.2...v2.1.3) (2026-10-26)
 
 ### Dependencies
