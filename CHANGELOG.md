@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.1.5](https://github.com/webhippie/website/compare/v2.1.4...v2.1.5) (2026-11-16)
+
+* **locks:** lock file maintenance ([#258](https://github.com/webhippie/website/issues/258)) ([e89875d](https://github.com/webhippie/website/commit/e89875d39707bea528bf28660c8c990d0bc5c61a))
+* **locks:** lock file maintenance ([#264](https://github.com/webhippie/website/issues/264)) ([21842ce](https://github.com/webhippie/website/commit/21842ce215d697d344c5e78300a050ca0471a17b))
+
+### Dependencies
+
+* **mise:** update dependency hugo-extended to v0.170.0 ([#261](https://github.com/webhippie/website/issues/261)) ([04b03f0](https://github.com/webhippie/website/commit/04b03f08fed5e619c47aceb025c411c3b856b929))
+* **mise:** update dependency npm:sass-embedded to v1.107.1 ([#256](https://github.com/webhippie/website/issues/256)) ([785598c](https://github.com/webhippie/website/commit/785598c03b5d16983c930cd2fcb185670325f821))
+* **mise:** update dependency npm:sass-embedded to v1.108.0 ([#259](https://github.com/webhippie/website/issues/259)) ([174c5ff](https://github.com/webhippie/website/commit/174c5ffd14f9e9ec2ec8480f9a979c01b5562834))
+* **mise:** update dependency npm:sass-embedded to v1.108.1 ([#260](https://github.com/webhippie/website/issues/260)) ([500114f](https://github.com/webhippie/website/commit/500114f17be8a926c6b14465a89786950cf1a395))
+* **mise:** update dependency npm:sass-embedded to v1.108.2 ([#262](https://github.com/webhippie/website/issues/262)) ([ac6b8fb](https://github.com/webhippie/website/commit/ac6b8fb86352162302ba33d9eef9b4f02444a0c2))
+* **mise:** update dependency prek to v0.5.10 ([#257](https://github.com/webhippie/website/issues/257)) ([58fca19](https://github.com/webhippie/website/commit/58fca19eeda33d175737788f3f1f83eecfeac3b0))
+* **mise:** update dependency prek to v0.5.11 ([#265](https://github.com/webhippie/website/issues/265)) ([09cfb75](https://github.com/webhippie/website/commit/09cfb75a412a6987b81b4b1b9dae722948559834))
+* **patch:** update dependency bootstrap to v5.3.9 ([#263](https://github.com/webhippie/website/issues/263)) ([761cf98](https://github.com/webhippie/website/commit/761cf9837855c58a27d81fe55b45de20a39c06d2))
+
 ## [2.1.4](https://github.com/webhippie/website/compare/v2.1.3...v2.1.4) (2026-11-02)
 
 ### Dependencies
