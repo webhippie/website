@@ -1,8 +1,8 @@
 #:schema https://mise.jdx.dev/schema/mise.json
 
 [tools]
-hugo-extended = "0.170.1"
+hugo = "0.170.1"
 node = "26"
 prek = "0.5.11"
 
-"npm:sass-embedded" = "1.108.2"
+"github:sass/dart-sass" = "1.108.2"
