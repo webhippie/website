@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.2.0](https://github.com/webhippie/website/compare/v2.1.5...v2.2.0) (2026-11-23)
+
+* **locks:** lock file maintenance ([#269](https://github.com/webhippie/website/issues/269)) ([1caffdb](https://github.com/webhippie/website/commit/1caffdb32213ad647f9ecb8c5b8142f04fd050c5))
+
+### Features
+
+* switch to plain hugo and resolve deprecations ([ca470a5](https://github.com/webhippie/website/commit/ca470a52aaaff693a4a1c3a3c69436d553673333))
+
+### Dependencies
+
+* **minor:** update dependency autoprefixer to v10.7.0 ([#268](https://github.com/webhippie/website/issues/268)) ([873ad9c](https://github.com/webhippie/website/commit/873ad9cc2961b33e7bdfe2ae5fd42d3a59ba4ab4))
+* **mise:** update dependency hugo-extended to v0.170.1 ([#267](https://github.com/webhippie/website/issues/267)) ([8222969](https://github.com/webhippie/website/commit/822296941aeb680f4ba9d7abe117a89111251791))
+* **patch:** update dependency postcss to v8.5.33 ([#266](https://github.com/webhippie/website/issues/266)) ([e97798f](https://github.com/webhippie/website/commit/e97798ff98683347a29e4a949e348f38582edaa5))
+
 ## [2.1.5](https://github.com/webhippie/website/compare/v2.1.4...v2.1.5) (2026-11-16)
 
 * **locks:** lock file maintenance ([#258](https://github.com/webhippie/website/issues/258)) ([e89875d](https://github.com/webhippie/website/commit/e89875d39707bea528bf28660c8c990d0bc5c61a))
